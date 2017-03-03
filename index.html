@@ -5,8 +5,57 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+<header class="header">
+  <div class="logo">
+    <a class="logo__link">
+      <img class="logo__image">
+    </a>
+  </div>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item">Каталог товаров</li>
+      <li class="menu__item">Поиск по сайту</li>
+      <li class="menu__item">Вязание на заказ</li>
+      <li class="menu__item">Корзина: пока пуста</li>
+    </ul>
+    <button class="menu__button menu__button--open"></button>
+    <button class="menu__button menu__button--close"></button>
+  </nav>
+</header>
+<main class="main">
+  <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+      <a class="main__section" href="#">
+        <section class="main__item main__item--light">Предметы интерьера</section>
+      </a>
+      <a class="main__link" href="#">
+        <section class="main__item main__item--dark">Детские игрушки</section>
+      </a>
+ <section class="product">
+   <h2 class="product__title">Вязанные корзинки</h2>
+   <h3 class="product__slogan">Товар недели</h3>
+   <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+   <table class="product__table">
+     <tr>
+       <td class="product__feature">Цвет:</td>
+       <td class="product__value">"Тиффани"/Серый</td>
+     </tr>
+     <tr>
+       <td class="product__feature">Диаметр</td>
+       <td class="product__value">25 см</td>
+     </tr>
+     <tr>
+       <td class="product__feature">Высота</td>
+       <td class="product__value">15 см</td>
+     </tr>
+   </table>
+   <div class="product__image">
+     <img src="#" width="" height="" alt="">
+   </div>
+   <p class="product__price">Цена: 990 руб.</p>
+   <div class="product__button">
+     <a class="product__order">Заказать</a>
+ </div>
+  </section>
+</main>
   </body>
 </html>
