@@ -10,10 +10,10 @@
   <header class="header">
     <div class="logo">
       <a class="logo__link">
-        <img class="logo__image">
+        <img class="logo__image" src="#" width="" height="" alt="">
       </a>
     </div>
-    <nav class="menu">
+    <nav class="menu menu--closed">
       <div class="menu__wrapper">
         <ul class="menu__list">
           <li class="menu__item">Каталог товаров</li>
@@ -21,8 +21,7 @@
           <li class="menu__item">Вязание на заказ</li>
           <li class="menu__item">Корзина: пока пуста</li>
         </ul>
-        <button class="menu__button menu__button--open"></button>
-        <button class="menu__button menu__button--close"></button>
+        <a class="menu__button"></a>
       </div>
     </nav>
   </header>
@@ -57,9 +56,7 @@
           <img src="#" width="" height="" alt="">
         </div>
         <p class="product__price">Цена: 990 руб.</p>
-        <div class="product__button">
-          <a href="#" class="product__order">Заказать</a>
-        </div>
+        <a href="#" class="button button--product">Заказать</a>
       </div>
     </section>
     <section class="modal">
@@ -83,7 +80,7 @@
               <span class="modal__size"></span>
               L
             </label>
-            <button class="modal__button" type="submit">Добавить</button>
+            <button class="form-btn form-btn--modal" type="submit">Добавить</button>
           </div>
         </form>
       </div>
@@ -105,34 +102,34 @@
       <div class="feedback__wrapper">
         <h4 class="feedback__title">Отзывы</h4>
         <article class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</article>
-        <p class="feedback__user">Анастасия Красильникова
-         @misssssiskras</p>
-         <div class="feedback__paginator">
-           <a href="#" class="feedback__current"></a>
-           <a href="#" class="feedback__next"></a>
-         </div>
-         <div class="feedback__write">
-         <a href="#" class="feedback__button">Написать</a>
-       </div>
+        <p class="feedback__user">Анастасия Красильникова @misssssiskras
+        </p>
+        <button class="feedback-btn feedback-btn--current" type="button">Предыдущий отзыв</button>
+        <button class="feedback-btn feedback-btn--next" type="button">Следующий отзыв</button>
+        <div class="feedback__write">
+          <a href="#" class="button button--feedback">Написать</a>
+        </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-      <h5 class="contacts__title">Контакты</h5>
-      <ul class="contacts__list">
-        <li class="contacts__item contacts__item--mail">
-        <span>e-mail:</span><p>info@mimimishkashop.ru</p>
-        </li>
-        <li class="contacts__item">
-        <span>адрес:</span><p>г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        </li>
-      </ul>
-    </div>
+        <h5 class="contacts__title">Контакты</h5>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--mail">
+            <span>e-mail:</span>
+            <p>info@mimimishkashop.ru</p>
+          </li>
+          <li class="contacts__item">
+            <span>адрес:</span>
+            <p>г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          </li>
+        </ul>
+      </div>
       <div class="map">
         <div class="map__marker"></div>
       </div>
       <div class="contacts__write">
-        <a href="#" class="contacts__button">Напишите нам</a>
+        <a href="#" class="button button--contacts">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -142,12 +139,12 @@
         <a href="#" class="social__button social__button--ig"></a>
         <a href="#" class="social__button social__button--fb"></a>
         <a href="#" class="social__button social__button--tw"></a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="#" class="footer__link"></a>
+      </div>
     </div>
-    <div class="footer__copyright">
-      <span>Разработано</span>
-      <a href="#" class="footer__button"></a>
-    </div>
-  </div>
   </footer>
 </body>
 
