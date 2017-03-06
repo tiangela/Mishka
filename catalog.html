@@ -10,98 +10,91 @@
   <header class="header">
     <div class="logo">
       <a class="logo__link">
-        <img class="logo__image" src="#" width="" height="" alt="">
+        <img class="logo__image" src="#index.html" width="" height="" alt="">
       </a>
     </div>
     <nav class="menu menu--closed">
       <div class="menu__wrapper">
         <ul class="menu__list">
-          <li class="menu__item">Каталог товаров</li>
-          <li class="menu__item">Поиск по сайту</li>
-          <li class="menu__item">Вязание на заказ</li>
-          <li class="menu__item">Корзина: пока пуста</li>
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link">Поиск по сайту</a></li>
+          <li class="menu__item"><a class="menu__link">Вязание на заказ</a></li>
+          <li class="menu__item"><a class="menu__link">Корзина: пока пуста</a></li>
         </ul>
         <a class="menu__button"></a>
       </div>
     </nav>
   </header>
-<main class="main">
-  <h1 class="main__title main__title--catalog">Каталог товаров</h1>
-  <section class="catalog">
-    <div class="catalog__wrapper">
-      <article class="catalog__item">
-        <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
-        <h2><a class="catalog__title" href="#">Зайчик-попрыгайчик</a></h2>
-          <p class="catalog__feature">Рост 30 см, вес 200 г</p>
-        <p class="catalog__price">1 200 руб.</p>
-        <a class="button button--item"></a>
-      </article>
-      <article class="catalog__item">
-        <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
-        <h2><a class="catalog__title" href="#">Корзинка для белья</a></h2>
-        <p class="catalog__feature">Диаметр 15 см, высота 10 см</p>
-        <p class="catalog__price">690 руб.</p>
-        <a class="button button--item"></a>
-      </article>
-      <article class="catalog__item">
-        <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
-        <h2><a class="catalog__title" href="#">Большая корзинка для игрушек</a></h2>
-        <p class="catalog__feature">Диаметр 30 см, высота 30 см</p>
-        <p class="catalog__price">1 500 руб.</p>
-        <a class="button button--item"></a>
-      </article>
+  <main class="main">
+    <h1 class="main__title main__title--catalog">Каталог товаров</h1>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
+          <h2><a class="catalog__title" href="#">Зайчик-попрыгайчик</a></h2>
+          <span class="catalog__feature">Рост 30 см, вес 200 г</span>
+          <span class="catalog__price">1 200 руб.</span>
+          <a class="button button--item"></a>
+        </article>
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
+          <h2><a class="catalog__title" href="#">Корзинка для белья</a></h2>
+          <span class="catalog__feature">Диаметр 15 см, высота 10 см</span>
+          <span class="catalog__price">690 руб.</span>
+          <a class="button button--item"></a>
+        </article>
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="#" width="" height="" alt=""></a>
+          <h2><a class="catalog__title" href="#">Большая корзинка для игрушек</a></h2>
+          <span class="catalog__feature">Диаметр 30 см, высота 30 см</span>
+          <span class="catalog__price">1 500 руб.</span>
+          <a class="button button--item"></a>
+        </article>
+      </div>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <img class="video__image" src="http://video.it" width="" height="" alt="видео">
+      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    </section>
+    <a class="button button--catalog">Сделать заказ</a>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="social">
+        <a href="#" class="social__button social__button--ig"></a>
+        <a href="#" class="social__button social__button--fb"></a>
+        <a href="#" class="social__button social__button--tw"></a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="#" class="footer__link"></a>
+      </div>
     </div>
-  </section>
+  </footer>
   <section class="modal">
     <div class="modal__wrapper">
-      <form class="modal__form" action="#" method="post">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="modal__title">Добавить в корзину</p>
         <p class="modal__text">Выберите размер</p>
         <div class="modal__wrapper">
           <label>
-            <input type="radio" name="size" value="S">
-            <span class="modal__size"></span>
-            S
-          </label>
+          <input class="modal__size" type="radio" name="size" value="S">
+          S
+        </label>
           <label>
-            <input type="radio" name="size" value="M">
-            <span class="modal__size"></span>
-            M
-          </label>
+          <input class="modal__size" type="radio" name="size" value="M">
+          M
+        </label>
           <label>
-            <input type="radio" name="size" value="L">
-            <span class="modal__size"></span>
-            L
-          </label>
+          <input class="modal__size" type="radio" name="size" value="L">
+          L
+        </label>
           <button class="form-btn form-btn--modal" type="submit">Добавить</button>
         </div>
       </form>
     </div>
   </section>
-  <section class="video">
-    <h2 class="video__title">Процесс производства</h2>
-    <video preload="metadata" width="" height="">
-      <source src="video.mp4" type="video/mp4">
-      <source src="video.ogv" type="video/ogg">
-      <source src="video.webm" type="video/webm">
-    </video>
-    <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-  </section>
-  <a class="button button--catalog">Сделать заказ</a>
-</main>
-<footer class="footer">
-  <div class="footer__wrapper">
-    <div class="social">
-      <a href="#" class="social__button social__button--ig"></a>
-      <a href="#" class="social__button social__button--fb"></a>
-      <a href="#" class="social__button social__button--tw"></a>
-    </div>
-    <div class="footer__copyright">
-      <span>Разработано</span>
-      <a href="#" class="footer__link"></a>
-    </div>
-  </div>
-</footer>
 </body>
 
 </html>
