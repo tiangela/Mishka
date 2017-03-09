@@ -1,0 +1,49 @@
+.product{
+  background-color: @body-color;
+  margin: 0 30px;
+  .product__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: @color-black;
+    padding-top: 30px;
+  }
+  .product__slogan {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    color: @color-green;
+  }
+  .product__text {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @color-grey;
+    padding: 30px 0;
+  }
+  .product__table {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @color-grey;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+      .product__row {
+      border-bottom: 1px solid @light-grey;
+        .product__feature {
+          padding: 12px 0;
+        }
+        .product__value {
+          padding-left: 32px;
+        }
+  }
+  }
+  .product__price {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+    color: @color-grey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

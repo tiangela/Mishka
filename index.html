@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -16,17 +17,19 @@
     <nav class="menu menu--closed">
       <div class="menu__wrapper">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Поиск по сайту</a></li>
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
           <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--search" href="#">Поиск по сайту</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <a class="menu__button" href="#"></a>
       </div>
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+    <div class="main__wrapper">
+    <h1 class="main__title main__title--index">Милые штуки ручной работы для дома</h1>
+  </div>
     <a class="main__link" href="#">
       <span class="main__item main__item--light">Предметы интерьера</span>
     </a>
@@ -39,21 +42,21 @@
         <span class="product__slogan">Товар недели</span>
         <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product__table">
-          <tr>
+          <tr class="product__row">
             <td class="product__feature">Цвет:</td>
             <td class="product__value">"Тиффани"/Серый</td>
           </tr>
-          <tr>
+          <tr class="product__row">
             <td class="product__feature">Диаметр</td>
             <td class="product__value">25 см</td>
           </tr>
-          <tr>
+          <tr class="product__row">
             <td class="product__feature">Высота</td>
             <td class="product__value">15 см</td>
           </tr>
         </table>
         <div class="product__image">
-          <img src="#" width="" height="" alt="">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
         </div>
         <p class="product__price">Цена: 990 руб.</p>
         <a href="#" class="button button--product">Заказать</a>
@@ -76,7 +79,7 @@
       <div class="feedback__wrapper">
         <h2 class="feedback__title">Отзывы</h2>
         <article class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</article>
-        <cite class="feedback__user">Анастасия Красильникова</cite> <a class="feedback__mail">@misssssiskras</a>
+        <cite class="feedback__user">Анастасия Красильникова</cite> <a href="#" class="feedback__mail">@misssssiskras</a>
         <button class="feedback__btn feedback__btn--current" type="button">Предыдущий отзыв</button>
         <button class="feedback__btn feedback__btn--next" type="button">Следующий отзыв</button>
         <div class="feedback__write">
@@ -86,11 +89,11 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h5 class="contacts__title">Контакты</h5>
+        <h3 class="contacts__title">Контакты</h3>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--mail">
             <span>e-mail:</span>
-            <a>info@mimimishkashop.ru</a>
+            <a href="#">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
             <span>адрес:</span>
@@ -135,7 +138,7 @@
             <input class="modal__size" type="radio" name="size" value="L">
             L
           </label>
-          <button class="form-btn form-btn--modal" type="submit">Добавить</button>
+          <button class="button button--modal" type="submit">Добавить</button>
         </div>
       </form>
     </div>
