@@ -2,9 +2,31 @@
   height: 80px;
 }
 
+.header__logo {
+  height: 35px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 @media @tablet-widths {
-  .page-header {
+  .header {
     position: relative;
     min-height: 90px;
+  }
+  .header__logo {
+    position: absolute;
+    left: 0;
+    }
+}
+
+@media @desktop-widths {
+  .header {
+    height: 90px;
+  }
+  .header__logo {
+    position: relative;
+    height: 75px;
+    text-align: center;
+    padding: 5px 0;
   }
 }

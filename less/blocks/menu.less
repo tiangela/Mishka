@@ -1,17 +1,51 @@
 .menu {
-  background-color: @body-color;
+  width: 320px;
+  margin: 0 auto;
+}
+
   .menu__list, .menu__user {
+    padding: 0;
+    margin: 0;
     list-style: none;
     font-size: 0;
-    .menu__item, .menu__user-item {
-      font-size: 19px;
-      line-height: 24px;
-      font-weight: 600;
-      .menu__link, .menu__user-link {
-        color: @color-black;
-        text-decoration: none;
-        padding-left: 46px;
-      }
+  }
+  .menu__item, .menu__user-item {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 600;
     }
+  .menu__link, .menu__user-link {
+    color: @color-black;
+    text-decoration: none;
+    padding-left: 46px;
+  }
+
+  @media @tablet-widths {
+    .menu {
+      width: auto;
+      margin: 0;
+    }
+    .menu__wrapper {
+      .container();
+      .clearfix();
+    }
+  }
+    .menu__item {
+      float: left;
+      width: 334px;
+  }
+    .menu__user {
+      float: right;
+      width: 350px;
+      padding-left: 320px;
+  }
+
+  @media @desktop-widths {
+    .menu__item {
+      width: 380px;
+  }
+
+  .menu__user {
+    padding-left: 250px;
   }
 }
