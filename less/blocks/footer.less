@@ -1,9 +1,13 @@
-.footer {
-  font-family: "OpenSans", Arial, sans-serif;
-  margin: 0 30px;
-  padding-top: 23px;
-  padding-bottom: 22px;
-  background-color: @bgr-color;
+  .footer {
+    font-family: "OpenSans", Arial, sans-serif;
+    margin: 0 30px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    background-color: @bgr-color;
+}
+  .header__wrapper {
+    padding: 0 30px;
+}
   .footer__copyright {
     font-size: 19px;
     line-height: 18px;
@@ -17,4 +21,8 @@
     padding-top: 21px;
     padding-left: 53px;
   }
-}
+
+  @media @tablet-widths {
+  .footer__wrapper {
+    padding: 0 50px;
+  }

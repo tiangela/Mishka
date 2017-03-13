@@ -3,6 +3,7 @@
 }
 .main__wrapper {
   .container ();
+  padding: 0 30px;
 }
   .main__title {
     padding-top: 76px;
@@ -42,17 +43,21 @@
     }
 
   @media @tablet-widths {
-    .main__title {
-      display: inline-block;
-      text-align: center;
-      vertical-align: top;
-      padding-top: 103px;
-      padding-bottom: 77px;
+  .main__wrapper {
+    .container ();
+    padding: 0 50px;
+    }
+  .main__title {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 103px;
+    padding-bottom: 77px;
     &--index {
-      padding-left: 87px;
-      padding-right: 87px;
-      padding-top: 162px;
-      padding-bottom: 371px;
+    padding-left: 87px;
+    padding-right: 87px;
+    padding-top: 162px;
+    padding-bottom: 371px;
     }
   }
   .main__description {
