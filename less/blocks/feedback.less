@@ -1,5 +1,9 @@
 .feedback {
-  margin-bottom: 42px;
+  padding-bottom: 42px;
+}
+.feedback__wrapper {
+  .container();
+}
   .feedback__title {
     padding-bottom: 33px;
   }
@@ -8,7 +12,7 @@
     line-height: 30px;
     font-weight: 400;
     color: @color-grey;
-    padding-bottom: 64px;
+    padding-bottom: 34px;
   }
   .feedback__user {
     font-size: 18px;
@@ -29,4 +33,20 @@
     padding: 11px 38px;
     padding-bottom: 38px;
   }
-}
+
+    @media @tablet-widths {
+      .feedback__wrapper{
+        background: url("..img/review@1x.jpg") no-repeat;
+        position: relative;
+      }
+      .feedback__btn {
+        position: absolute;
+      }
+      .feedback__text {
+        padding-bottom: 73px;
+      }
+    }
+
+    @media @desktop-widths {
+
+    }
