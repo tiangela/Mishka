@@ -1,5 +1,6 @@
 .feedback {
   padding-bottom: 42px;
+  position: relative;
 }
 .feedback__wrapper {
   .container();
@@ -37,16 +38,28 @@
     @media @tablet-widths {
       .feedback__wrapper{
         background: url("..img/review@1x.jpg") no-repeat;
-        position: relative;
+      }
+      .feedback__title {
+        display: block;
+        width: 500px;
       }
       .feedback__btn {
         position: absolute;
       }
       .feedback__text {
-        padding-bottom: 73px;
+        padding-bottom: 50px;
       }
+
     }
 
     @media @desktop-widths {
-
+    .feedback__wrapper {
+      padding-left: 175px;
     }
+    .feedback__title {
+      }
+    .feedback__text {
+      padding-bottom: 70px;
+      padding-right: 195px;
+    }
+  }

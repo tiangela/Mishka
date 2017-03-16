@@ -1,45 +1,86 @@
 .menu {
-  width: 320px;
+  width: 320px; /*смотрится не очень, не могу придумать как по-другому задать, 100% не работает*/
+  min-height: 50px;
   margin: 0 auto;
+  background-color: @body-color;
+  z-index: 3;
 }
-
+  .menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  }
   .menu__list, .menu__user {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: 0;
+    font-size: none;
   }
   .menu__item, .menu__user-item {
+    border-top: 1px solid @border-grey;
     font-size: 19px;
     line-height: 24px;
     font-weight: 600;
-    }
+  }
   .menu__link, .menu__user-link {
-    color: @color-black;
-    text-decoration: none;
-    padding-left: 46px;
+      display: block;
+      color: @color-black;
+      text-decoration: none;
+      padding-left: 75px;
+      padding-top: 30px;
+      padding-bottom: 30px;
   }
 
   @media @tablet-widths {
-    .menu {
-      width: auto;
-      margin: 0;
-    }
-    .menu__wrapper {
-      .container();
-      .clearfix();
-    }
+  .menu {
+    width: auto;
   }
-    .menu__item {
-      float: left;
-      width: 334px;
+  .menu__button {
+    display: none;
   }
-    .menu__user-item {
-      float: right;
-      width: 350px;
+  .menu__wrapper {
+    flex-direction: row;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+        }
       }
-
-  @media @desktop-widths {
-  .menu__user-item {
+  }
+   .menu__link {
+      position: absolute;
+      &--catalog {
+        bottom: 0px;
+        left: 0px
+      }
+      &--form {
+        bottom: 0px;
+        left: 182px;
+      }
     }
+  .menu__user-link {
+      &--search {
+        display: none;
+  }
+      &--basket {
+      }
+    }
+  .menu__item, .menu__user-item {
+    border: none;
+  }
 }
+
+.menu__link, .menu__user-link {
+  padding-left: 50px;
+}
+  @media @desktop-widths {
+  .menu__link {
+    position: relative;
+  }
+}
+      /*a {
+        padding: 0;
+        padding-left: 40px;
+        padding-top: 20px;
+      }
+    }
+  }*/

@@ -2,9 +2,11 @@
   padding-top: 34px;
   padding-bottom: 60px;
 }
-.about__wrapper {
-  .container ();
-}
+.about__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
   .about__title {
     padding-top: 35px;
     padding-bottom: 30px;
@@ -18,26 +20,22 @@
       color: @color-grey;
     }
 @media @tablet-widths {
-  .about__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+   .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .about__title {
     padding-top: 60px;
     padding-bottom: 50px;
   }
   .about__item {
-    display: inline-block;
-    width: 334px;
+    width: 50%;
     margin-bottom: 40px;
-    margin-right: -4px;
-  }
+    }
 }
 @media @desktop-widths {
   .about__wrapper {
-  width: 700px;
-  margin: 0 175px;
+    padding-left: 175px;
   }
   .about__title {
     padding-top: 66px;

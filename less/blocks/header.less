@@ -1,13 +1,16 @@
 .header {
   height: 80px;
+  position: relative;
 }
 
 .header__wrapper {
-  padding: 0 30px;
+  .container();
 }
 
 .header__logo {
-  height: 35px;
+  height: 40px;
+  width: 90px;
+  background-color: @light-grey;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -15,14 +18,13 @@
 @media @tablet-widths {
   .header {
     position: relative;
-    min-height: 90px;
+    height: 90px;
     }
   .header__wrapper {
-      padding: 0 50px;
-    }
+    display: flex;
+  }
   .header__logo {
-    position: absolute;
-    left: 0;
+    width: 320px;
     }
 }
 
@@ -31,9 +33,7 @@
     height: 90px;
   }
   .header__logo {
-    position: relative;
     height: 75px;
-    text-align: center;
     padding: 5px 0;
   }
 }

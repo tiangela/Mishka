@@ -18,8 +18,8 @@
     <nav class="menu menu--closed menu--open">
       <div class="menu__wrapper">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
-          <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--catalog">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--form" href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="menu__user">
           <li class="menu__user-item"><a class="menu__user-link menu__user-link--search" href="#">Поиск по сайту</a></li>
@@ -31,16 +31,17 @@
   </div>
   </header>
   <main class="main">
-    <div class="main__wrapper">
-      <div class="main__wrapper main__wrapper--title">
-        <h1 class="main__title main__title--index">Милые штуки ручной работы для дома</h1>
-      </div>
-      <a class="main__link" href="#">
+    <h1 class="main__title main__title--index">Милые штуки ручной работы для дома</h1>
+    <div class="main__comment">
+      <p>Бесплатная доставка по России</p>
+    </div>
+        <a class="main__link" href="#">
       <span class="main__item main__item--light">Предметы интерьера</span>
     </a>
     <a class="main__link" href="#">
       <span class="main__item main__item--dark">Детские игрушки</span>
     </a>
+    <div class="main__wrapper">
     <section class="product">
       <h2 class="product__title">Вязаные корзинки</h2>
       <span class="product__slogan">Товар недели</span>
@@ -84,7 +85,8 @@
       <div class="feedback__wrapper">
         <h2 class="feedback__title">Отзывы</h2>
         <article class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</article>
-        <cite class="feedback__user">Анастасия Красильникова</cite> <a href="#" class="feedback__mail">@misssssiskras</a>
+        <cite class="feedback__user">Анастасия Красильникова</cite><br>
+        <a href="#" class="feedback__mail">@misssssiskras</a>
         <button class="feedback__btn feedback__btn--current" type="button">Предыдущий отзыв</button>
         <button class="feedback__btn feedback__btn--next" type="button">Следующий отзыв</button>
         <div class="feedback__write">
@@ -100,21 +102,22 @@
             <span>e-mail:</span>
             <a href="#">info@mimimishkashop.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <span>адрес:</span>
-            <p>г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </li>
         </ul>
+      <a href="#" class="button button--contacts">Напишите нам</a>
       </div>
       <div class="map">
         <div class="map__marker"></div>
       </div>
-      <a href="#" class="button button--contacts">Напишите нам</a>
     </section>
     </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
+      <div class="footer__logo"></div>
       <div class="social">
         <a href="#" class="social__button social__button--ig"></a>
         <a href="#" class="social__button social__button--fb"></a>
@@ -127,8 +130,7 @@
     </div>
   </footer>
   <section class="modal">
-    <div class="modal__wrapper">
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="modal__title">Добавить в корзину</p>
         <p class="modal__text">Выберите размер</p>
         <div class="modal__wrapper">
@@ -147,8 +149,7 @@
           <button class="button button--modal" type="submit">Добавить</button>
         </div>
       </form>
-    </div>
-  </section>
+    </section>
 </body>
 
 </html>
