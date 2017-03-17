@@ -40,7 +40,7 @@
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__wrapper">
-        <div class="form__list">
+        <div  class="form__list">
           <span class="form__title">Тип</span>
           <div class="form__container">
             <label class="form__label form__label--accessory">
@@ -53,9 +53,11 @@
           </label>
           </div>
         </div>
-        <div class="form__list form__list--color">
-          <span class="form__title">Цвет</span>
+      <div class="form__list form__list--color">
           <div class="form__container form__container--color">
+          <div class="form__wrapper">
+          <span class="form__title">Цвет</span>
+
             <label class="form__label">
             <input class="form__item form__item--checkbox" type="checkbox" name="white" id="white" checked>
               Белый</label>
@@ -75,9 +77,8 @@
             <label class="form__label">
             <input class="form__item form__item--checkbox" type="checkbox" name="orange" id="orange">
             Оранжевый</label>
-          </div>
-        </div>
-        <div class="form__list">
+</div>
+      <div class="form__list">
           <span class="form__title">ФИО</span>
           <div class="form__container form__container--name">
             <label class="form__label" for="name">Имя:</label>
@@ -111,7 +112,9 @@
         <p class="form__comment">*Поля обязательны для заполнения</p>
         <button class="button button--form" type="submit">Отправить заказ</button>
       </div>
-    </form>
+      </div>
+    </div>
+  </form>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
