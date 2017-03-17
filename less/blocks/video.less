@@ -1,5 +1,7 @@
 .video {
-  /*width: 100%;*/
+  width: 100%;
+}
+.video__wrapper {
   border: 1px solid @light-grey;
   .container();
   margin-top: 30px;
@@ -29,18 +31,27 @@
 
   @media @tablet-widths {
     .video__wrapper {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
       position: relative;
+      min-height: 740px;
     }
     .video__title {
-      position: absolute;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-left: 64px;
     }
     .video__image{
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      order: 1;
     }
     .video__container {
-      padding-top: 80px;
-      margin: 0 42px;
+      padding-bottom: 100px;
+      /*margin: 0 42px;*/
     }
     .video__description {
       padding-top: 0;
