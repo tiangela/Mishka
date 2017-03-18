@@ -8,7 +8,6 @@
   margin-bottom: 60px;
 }
 .video__container {
-  margin: 0 28px;
 }
   .video__title {
     display: block;
@@ -27,6 +26,7 @@
     color: @color-grey;
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 28px;
   }
 
   @media @tablet-widths {
@@ -60,6 +60,11 @@
     }
   }
   @media @desktop-widths {
+    .video__wrapper {
+      flex-direction: row;
+      padding-top: 100px;
+      min-height: 455px;
+      }
     .video__container {
       width: 356px;
       display: inline-block;
@@ -67,9 +72,10 @@
       padding: 0;
     }
     .video__description {
-      padding-bottom: 140px;
-      padding-left: 30px
-    }
+      padding-left: 60px;
+      padding-right: 70px;
+      padding-bottom: 170px;
+      }
     .video__image {
       width: 650px;
     }
