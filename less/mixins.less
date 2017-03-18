@@ -1,0 +1,32 @@
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 260px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 668px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}
+
+.container-fluid () {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 87%;        /* 668px / 768px ~= 87% */
+    max-width: 1050px;  /* 1050px / .87 ~= 1207px-какое-то странное число получилось в итоге при макс. ширине декстопа 1150*/
+    margin: 0 auto;
+  }
+
+}

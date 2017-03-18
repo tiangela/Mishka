@@ -5,41 +5,51 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+  </head>
 
 <body>
   <header class="header">
-    <div class="logo">
-      <a class="logo__link">
-        <img class="logo__image" src="#" width="" height="" alt="">
+    <div class="header__wrapper">
+    <div class="header__logo">
+      <a class="header__link">
+        <img src="#" width="" height="" alt="">
       </a>
     </div>
-    <nav class="menu menu--closed">
+    <nav class="menu menu--closed menu--open">
       <div class="menu__wrapper">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
-          <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
-          <li class="menu__item"><a class="menu__link menu__link--search" href="#">Поиск по сайту</a></li>
-          <li class="menu__item"><a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--catalog">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--form" href="form.html">Вязание на заказ</a></li>
         </ul>
-        <a class="menu__button" href="#"></a>
+        <ul class="menu__user">
+          <li class="menu__user-item"><a class="menu__user-link menu__user-link--search" href="#">Поиск по сайту</a></li>
+          <li class="menu__user-item"><a class="menu__user-link menu__user-link--basket" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <button class="menu__button" type="button" href="#">Открыть меню</button>
       </div>
     </nav>
+  </div>
   </header>
   <main class="main">
-    <div class="main__wrapper">
+    <div class="main__title-container">
+      <div class="main__container">
     <h1 class="main__title main__title--index">Милые штуки ручной работы для дома</h1>
-  </div>
-    <a class="main__link" href="#">
-      <span class="main__item main__item--light">Предметы интерьера</span>
-    </a>
-    <a class="main__link" href="#">
-      <span class="main__item main__item--dark">Детские игрушки</span>
-    </a>
+    <div class="main__comment">
+      <p>Бесплатная доставка по России</p>
+    </div>
+      <a class="main__link" href="#">
+        <span class="main__item main__item--light">Предметы интерьера</span>
+      </a>
+      <a class="main__link" href="#">
+        <span class="main__item main__item--dark">Детские игрушки</span>
+      </a>
+      </div>
+    </div>
+    <div class="main__wrapper">
     <section class="product">
+      <h2 class="product__title">Вязаные корзинки</h2>
+      <span class="product__slogan">Товар недели</span>
       <div class="product__wrapper">
-        <h2 class="product__title">Вязанные корзинки</h2>
-        <span class="product__slogan">Товар недели</span>
         <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product__table">
           <tr class="product__row">
@@ -56,7 +66,7 @@
           </tr>
         </table>
         <div class="product__image">
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+          <img src="#" width="" height="" alt="">
         </div>
         <p class="product__price">Цена: 990 руб.</p>
         <a href="#" class="button button--product">Заказать</a>
@@ -79,7 +89,8 @@
       <div class="feedback__wrapper">
         <h2 class="feedback__title">Отзывы</h2>
         <article class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</article>
-        <cite class="feedback__user">Анастасия Красильникова</cite> <a href="#" class="feedback__mail">@misssssiskras</a>
+        <cite class="feedback__user">Анастасия Красильникова</cite>
+        <a href="#" class="feedback__mail">@misssssiskras</a>
         <button class="feedback__btn feedback__btn--current" type="button">Предыдущий отзыв</button>
         <button class="feedback__btn feedback__btn--next" type="button">Следующий отзыв</button>
         <div class="feedback__write">
@@ -89,26 +100,28 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h3 class="contacts__title">Контакты</h3>
+        <span class="contacts__title">Контакты</span>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--mail">
             <span>e-mail:</span>
             <a href="#">info@mimimishkashop.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <span>адрес:</span>
-            <p>г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </li>
         </ul>
+      <a href="#" class="button button--contacts">Напишите нам</a>
       </div>
       <div class="map">
         <div class="map__marker"></div>
       </div>
-      <a href="#" class="button button--contacts">Напишите нам</a>
     </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
+      <div class="footer__logo"></div>
       <div class="social">
         <a href="#" class="social__button social__button--ig"></a>
         <a href="#" class="social__button social__button--fb"></a>
@@ -121,8 +134,7 @@
     </div>
   </footer>
   <section class="modal">
-    <div class="modal__wrapper">
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="modal__title">Добавить в корзину</p>
         <p class="modal__text">Выберите размер</p>
         <div class="modal__wrapper">
@@ -141,8 +153,7 @@
           <button class="button button--modal" type="submit">Добавить</button>
         </div>
       </form>
-    </div>
-  </section>
+    </section>
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 .feedback {
-  margin-bottom: 42px;
+  padding-bottom: 42px;
+  position: relative;
+}
+.feedback__wrapper {
+  .container();
+}
   .feedback__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 600;
-    color: @color-black;
     padding-bottom: 33px;
   }
   .feedback__text {
@@ -12,7 +13,7 @@
     line-height: 30px;
     font-weight: 400;
     color: @color-grey;
-    padding-bottom: 64px;
+    padding-bottom: 34px;
   }
   .feedback__user {
     font-size: 18px;
@@ -33,4 +34,32 @@
     padding: 11px 38px;
     padding-bottom: 38px;
   }
-}
+
+    @media @tablet-widths {
+      .feedback__wrapper{
+        background: url("..img/review@1x.jpg") no-repeat;
+      }
+      .feedback__title {
+        display: block;
+        width: 500px;
+      }
+      .feedback__btn {
+        position: absolute;
+      }
+      .feedback__text {
+        padding-bottom: 50px;
+      }
+
+    }
+
+    @media @desktop-widths {
+    .feedback__wrapper {
+      padding-left: 175px;
+    }
+    .feedback__title {
+      }
+    .feedback__text {
+      padding-bottom: 70px;
+      padding-right: 195px;
+    }
+  }

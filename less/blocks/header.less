@@ -1,4 +1,39 @@
 .header {
-  font-family: "OpenSans", Arial, sans-serif;
-  margin: 0 30px;
+  height: 80px;
+  position: relative;
+}
+
+.header__wrapper {
+  .container();
+}
+
+.header__logo {
+  height: 40px;
+  width: 90px;
+  background-color: #8ed0a5;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media @tablet-widths {
+  .header {
+    position: relative;
+    height: 90px;
+    }
+  .header__wrapper {
+    display: flex;
+  }
+  .header__logo {
+    width: 320px;
+    }
+}
+
+@media @desktop-widths {
+  .header {
+    height: 90px;
+  }
+  .header__logo {
+    height: 75px;
+    padding: 5px 0;
+  }
 }
