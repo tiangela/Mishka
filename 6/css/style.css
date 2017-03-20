@@ -439,21 +439,27 @@ h3 {
     -ms-flex-pack: justify;
         justify-content: space-between;
     width: 315px;
-    min-height: 660px;
   }
   .catalog__image {
     width: 100%;
   }
   .catalog__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     width: 250px;
     margin-left: 28px;
+    min-height: 195px;
   }
   .catalog__price {
     min-height: 73px;
   }
   .catalog__feature {
     padding-left: 0;
-    margin-bottom: 28px;
+    margin: 0;
   }
 }
 .contacts {
