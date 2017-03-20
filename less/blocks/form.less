@@ -1,6 +1,6 @@
-  .form {
+.form {
     width: 100%;
-  margin-top: 32px;
+  margin-top: 23px;
   }
   .form__wrapper {
     .container();
@@ -12,7 +12,7 @@
   .form__title {
     display: block;
     padding-right: 28px;
-    padding-bottom: 27px;
+    padding-bottom: 17px;
     font-size: 17px;
     line-height: 16px;
     font-weight: 600;
@@ -21,6 +21,9 @@
   }
 
 .form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 600;
   display: block;
   padding-bottom: 11px;
   padding-top: 11px;
@@ -33,12 +36,19 @@
   .form__wrapper {
     display: flex;
     align-items: baseline;
+    &--color {
+      padding-top: 68px;
+      }
   }
   .form__list--color {
+      margin-bottom: 47px;
       width: 100%;
       background-color: @bgr-color;
     }
   .form__list-contacts {
+    padding-top: 64px;
+    padding-bottom: 25px;
+    margin-bottom: 60px;
     background-color: @bgr-color;
   }
   .form__container {
@@ -51,7 +61,7 @@
       flex-grow: 1;
     }
     &--color {
-    height: 320px;
+    height: 302px;
     padding-right: 20px;
     }
     &--name {

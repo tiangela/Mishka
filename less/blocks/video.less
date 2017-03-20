@@ -24,9 +24,10 @@
     line-height: 24px;
     font-weight: 400;
     color: @color-grey;
-    padding-top: 30px;
+    padding-top: 13px;
     padding-bottom: 50px;
-    padding-left: 28px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   @media @tablet-widths {
@@ -38,10 +39,11 @@
       min-height: 740px;
     }
     .video__title {
+      font-size: 20px;
       width: 100%;
       margin: 0;
       padding: 0;
-      padding-left: 64px;
+      padding-left: 108px;
     }
     .video__image{
       position: absolute;
@@ -50,13 +52,16 @@
       width: 100%;
     }
     .video__container {
-      padding-bottom: 100px;
+      padding-bottom: 128px;
       /*margin: 0 42px;*/
     }
     .video__description {
-      padding-top: 0;
-      font-size: 13px;
-      line-height: 24px;
+      padding-top: 16px;
+      font-size: 15px;
+      line-height: 30px;
+      padding-bottom: 12px;
+      padding-left: 35px;
+      padding-right: 43px;
     }
   }
   @media @desktop-widths {
@@ -79,4 +84,8 @@
     .video__image {
       width: 650px;
     }
-  }
+    .video__title {
+      padding-left: 58px;
+      padding-right: 60px;
+    }
+}
