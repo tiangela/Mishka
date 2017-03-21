@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 42px;
+  padding-top: 31px;
   padding-bottom: 30px;
 }
   .contacts__title {
@@ -8,7 +8,7 @@
     font-weight: 600;
     color: @color-black;
     display: block;
-    padding-bottom: 46px;
+    padding-bottom: 26px;
   }
   .contacts__list {
     list-style: none;
@@ -25,7 +25,7 @@
     display: table-row;
     span {
       display: table-cell;
-      padding-right: 30px;
+      padding-right: 27px;
     }
      p {
        display: table-cell;
@@ -36,7 +36,7 @@
     }
       &--address {
         p {
-          padding-right: 43px;
+          padding-right: 30px;
         }
       }
 .map {
@@ -47,8 +47,15 @@
   }
     @media @tablet-widths {
       .contacts {
-        padding-top: 72px;
+        font-size: 17px;
+        line-height: 30px;
+        padding-top: 143px;
         padding-bottom: 58px;
+      }
+      .contacts__title {
+        font-size: 43px;
+        line-height: 50px;
+        padding-bottom: 50px;
       }
       .contacts__item {
         display: table-cell;
@@ -61,20 +68,31 @@
     @media @desktop-widths {
     .contacts {
       display: flex;
+      padding-top: 280px;
+      padding-bottom: 117px;
+    }
+    .contacts__title {
+      font-size: 53px;
+      line-height: 57px;
+      padding-bottom: 45px;
+    }
+    .contacts__list {
+      margin-bottom: 91px;
     }
     .contacts__wrapper {
       width: 50%;
       padding-left: 175px;
     }
     .contacts__item {
+      font-size: 17px;
       display: table-row;
       width: 350px;
       padding-bottom: 50px;
       span {
-        padding-bottom: 45px;
+        padding-bottom: 30px;
       }
       &--mail a {
         padding-right: 20px;
       }
     }
-  }
+}

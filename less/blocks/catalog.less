@@ -1,20 +1,20 @@
-  .catalog {
+.catalog {
     width: 100%;
   }
   .catalog__wrapper {
     .container();
   }
   .catalog__container {
-    margin: 0 28px;
+    margin: 0 31px;
   }
     .catalog__item {
-      margin-top: 32px;
+      margin-bottom: 28px;
       border: 1px solid @border-grey;
       }
   .catalog__title {
       display: block;
-      padding-top: 30px;
-      padding-bottom: 18px;
+      padding-top: 19px;
+      padding-bottom: 6px;
       text-decoration: none;
       color: @color-black;
     }
@@ -23,7 +23,7 @@
       font-size: 13px;
       line-height: 30px;
       font-weight: 400;
-      padding-bottom: 22px;
+      padding-bottom: 16px;
       color: @color-grey;
     }
   .catalog__price {
@@ -40,6 +40,16 @@
 @media @tablet-widths {
   .catalog__item {
     display: flex;
+    margin-bottom: 54px;
+    min-height: 334px;
+    min-height: 660px;
+}
+  .catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 24px;
+    padding-left: 22px;
+    padding-right: 40px;
   }
   .catalog__image {
     width: 50%;
@@ -48,24 +58,49 @@
     width: 50%;
   }
   .catalog__feature {
-    margin-bottom: 180px;
+    font-size: 15px;
+    margin-bottom: 158px;
+    padding-left: 23px;
+  }
+  .catalog__price {
+    font-size: 17px;
+    padding-top: 21px;
+    padding-left: 27px;
   }
 }
 
 @media @desktop-widths {
- .catalog__wrapper {
-   display: flex;
-   justify-content: space-between;
- }
- .catalog__item {
-   display: block;
-   width: 315px;
- }
- .catalog__image {
+  .catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__title {
+  padding-left: 0;
+  padding-right: 0;
+}
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 315px;
+  }
+  .catalog__image {
    width: 100%;
  }
- .catalog__container {
-   width: 250px;
-   margin-left: 28px;
+  .catalog__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: 28px;
+    min-height: 195px;
+  }
+ .catalog__price {
+   min-height: 73px;
  }
+ .catalog__feature {
+   padding-left: 0;
+   margin: 0;
+}
 }

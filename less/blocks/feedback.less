@@ -1,5 +1,5 @@
 .feedback {
-  padding-bottom: 42px;
+  padding-bottom: 24px;
   position: relative;
 }
 .feedback__wrapper {
@@ -13,12 +13,12 @@
     line-height: 30px;
     font-weight: 400;
     color: @color-grey;
-    padding-bottom: 34px;
+    padding-bottom: 24px;
   }
   .feedback__user {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 600;
     color: @color-black;
     padding-bottom: 15px;
   }
@@ -40,6 +40,7 @@
         background: url("..img/review@1x.jpg") no-repeat;
       }
       .feedback__title {
+        padding-bottom: 50px;
         display: block;
         width: 500px;
       }
@@ -47,9 +48,12 @@
         position: absolute;
       }
       .feedback__text {
-        padding-bottom: 50px;
+        font-size: 17px;
+        padding-bottom: 55px;
       }
-
+      .feedback__user-container {
+        width: 334px;
+      }
     }
 
     @media @desktop-widths {
@@ -59,7 +63,7 @@
     .feedback__title {
       }
     .feedback__text {
-      padding-bottom: 70px;
-      padding-right: 195px;
+      padding-bottom: 34px;
+      padding-right: 102px;
     }
-  }
+}
