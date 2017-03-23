@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мишка: Каталог</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/244632-mishka/7/">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__link">
+        <img src="#" width="" height="" alt="">
+      </a>
+    </div>
+    <nav class="menu menu--closed menu--open">
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="menu__user">
+          <li class="menu__user-item"><a class="menu__user-link menu__user-link--search" href="#">Поиск по сайту</a></li>
+          <li class="menu__user-item"><a class="menu__user-link menu__user-link--basket" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <button class="menu__button" type="button" href="#">Открыть меню</button>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__title-wrapper main__title-wrapper--catalog">
+      <div class="main__container">
+    <h1 class="main__title main__title--catalog">Каталог товаров</h1>
+  </div>
+</div>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото зайчика"></a>
+          <div class="catalog__container">
+          <h3><a class="catalog__title" href="#">Зайчик-попрыгайчик</a></h3>
+          <span class="catalog__feature">Рост 30 см, вес 200 г</span>
+          <span class="catalog__price">1 200 руб.</span>
+          <a class="button button--basket"></a>
+          </div>
+      </article>
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки"></a>
+          <div class="catalog__container">
+          <h3><a class="catalog__title" href="#">Корзинка для белья</a></h3>
+          <span class="catalog__feature">Диаметр 15 см, высота 10 см</span>
+          <span class="catalog__price">690 руб.</span>
+          <a class="button button--basket"></a>
+        </div>
+        </article>
+        <article class="catalog__item">
+          <a class="catalog__image" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото большой корзинки"></a>
+          <div class="catalog__container">
+          <h3><a class="catalog__title" href="#">Большая корзинка для игрушек</a></h3>
+          <span class="catalog__feature">Диаметр 30 см, высота 30 см</span>
+          <span class="catalog__price">1 500 руб.</span>
+          <a class="button button--basket"></a>
+        </div>
+        </article>
+      </div>
+    </section>
+    <section class="video">
+      <div class="video__wrapper">
+        <div class="video__container">
+      <h3 class="video__title">Процесс производства</h3>
+      <img class="video__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="видео">
+    <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <a class="button button--catalog">Сделать заказ</a>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="social">
+        <a href="#" class="social__button social__button--ig"></a>
+        <a href="#" class="social__button social__button--fb"></a>
+        <a href="#" class="social__button social__button--tw"></a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="#" class="footer__link"></a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal">
+    <div class="modal__wrapper">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal__title">Добавить в корзину</p>
+        <p class="modal__text">Выберите размер</p>
+        <label>
+          <input class="modal__size" type="radio" name="size" value="S">
+          S
+        </label>
+          <label>
+          <input class="modal__size" type="radio" name="size" value="M">
+          M
+        </label>
+          <label>
+          <input class="modal__size" type="radio" name="size" value="L">
+          L
+        </label>
+          <button class="button button--modal" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
