@@ -31,7 +31,12 @@
     padding-right: 38px;
     padding-bottom: 123px;
     padding-top: 0;
-    background: url("../img/hero-mobile@1x.jpg") no-repeat center;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat;
+    background-position: center -18px;
+    @media @retina {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
     .main__comment {
       display: none;
@@ -51,8 +56,10 @@
     position: relative;
     padding-top: 23px;
     background-color: @color-green;
+    margin-top: -17px;
       &:nth-child(even) {
         background-color:@dark-green;
+        margin-top: 0;
       }
   }
   .main__item {
@@ -64,7 +71,28 @@
     line-height: 24px;
     font-weight: 600;
     color: @body-color;
+    &--light::after {
+      position: absolute;
+      content: "";
+      width: 39px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      opacity: 0.1;
+      right: 37px;
+      top: 22px;
+}
+    &--dark::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.1;
+    right: 25px;
+    top: 20px;
     }
+  }
+
   @media @tablet-widths {
       /*.main__wrapper {
     padding-left: 50px;
@@ -89,6 +117,7 @@
     height: 110px;
     width: 50%;
     margin-right: -5px;
+    margin-top: 0;
       &:nth-child(2) {
         margin-right: 0px;
         margin-left: 0px;
@@ -109,6 +138,12 @@
   .container ();
   padding-top: 135px;
   padding-bottom: 362px;
+  background: url("../img/hero-desktop@1x.jpg") no-repeat;
+  background-position: center -2px;
+  @media @retina {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 2300px auto;
+  }
 }
   .main__description {
     font-size: 17px;
@@ -148,8 +183,8 @@
   .main__item {
     width: 175px;
 }
-.main__title-wrapper--catalog, .main__title-wrapper--form  {
-  margin-bottom: 138px;
+  .main__title-wrapper--catalog, .main__title-wrapper--form  {
+    margin-bottom: 138px;
 }
 .main__title-container {
   padding-left: 203px;

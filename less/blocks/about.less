@@ -1,5 +1,5 @@
 .about {
-  padding-top: 34px;
+  padding-top: 31px;
   padding-bottom: 31px;
 }
 .about__list {
@@ -17,12 +17,26 @@
       line-height: 20px;
       font-weight: 600;
       padding-top: 55px;
-      padding-left: 2px;
-      padding-bottom: 25px;
+      padding-bottom: 28px;
       color: @color-grey;
+    &--material {
+      padding-right: 64px;
     }
-  .about__item:first-child {
-    padding-right: 20px;
+    &--style {
+      padding-right: 36px;
+    }
+    }
+  .about__item svg {
+    position: absolute;
+    fill: @color-green;
+}
+  .about__item #material {
+    top: 2px;
+    left: 9px;
+  }
+  .about__item #money {
+    top: 2px;
+    left: 1px;
   }
 @media @tablet-widths {
   .about {
