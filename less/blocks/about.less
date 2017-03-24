@@ -1,14 +1,16 @@
 .about {
+  .container ();
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
 }
 .about__list {
     margin: 0;
     padding: 0;
+    padding-top: 7px;
     list-style: none;
   }
   .about__title {
-    padding-top: 4px;
+    padding-top: 0;
     padding-bottom: 30px;
   }
   .about__item {
@@ -18,26 +20,94 @@
       font-weight: 600;
       padding-top: 55px;
       padding-bottom: 28px;
+      padding-right: 36px;
       color: @color-grey;
     &--material {
       padding-right: 64px;
     }
+    &--material::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 37px;
+      background: url("../img/icon-feature-1.svg");
+      top: 0;
+      left: 9px;
+    }
     &--style {
       padding-right: 36px;
     }
+    &--style::before {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 27px;
+      background: url("../img/icon-feature-3.svg");
+      top: 0;
+      left: 1px;
     }
-  .about__item svg {
+    &--like {
+      padding-right: 58px;
+    }
+    &--like::before {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 27px;
+      background: url("../img/icon-feature-5.svg");
+      top: 7px;
+      left: 8px;
+    }
+    &--love {
+      padding-right: 48px;
+    }
+    &--love::before {
+      position: absolute;
+      content: "";
+      width: 35px;
+      height: 34px;
+      background: url("../img/icon-feature-2.svg");
+      top: 4px;
+      left: 4px;
+    }
+    &--producer {
+      padding-right: 0;
+    }
+    &--producer::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 23px;
+      background: url("../img/icon-feature-4.svg");
+      top: 5px;
+      left: -4px;
+    }
+    &--box {
+      padding-right: 24px;
+    }
+    &--box::before {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 32px;
+      background: url("../img/icon-feature-6.svg");
+      top: 0;
+      left: 1px;
+    }
+  }
+/*.about__svg {
     position: absolute;
     fill: @color-green;
-}
-  .about__item #material {
-    top: 2px;
-    left: 9px;
+  &--material {
+
   }
-  .about__item #money {
+  &--style {
     top: 2px;
     left: 1px;
   }
+  &--like {
+  }*/
+
 @media @tablet-widths {
   .about {
     padding-top: 57px;
@@ -80,13 +150,5 @@
     padding-top: 100px;
     margin-bottom: 0;
     padding-bottom: 12px;
-  }
-  .about__item #material {
-    top: 50px;
-    left: 15px;
-  }
-  .about__item #money {
-    top: 60px;
-    left: 1px;
   }
 }

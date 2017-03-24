@@ -6,14 +6,14 @@
   .container();
 }
   .feedback__title {
-    padding-bottom: 33px;
+    padding-bottom: 20px;
   }
   .feedback__text {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
     color: @color-grey;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
   }
   .feedback__user {
     font-size: 18px;
@@ -28,13 +28,36 @@
     font-weight: 400;
     color: @color-grey;
     padding-bottom: 31px;
+    text-decoration: none;
+  }
+  .feedback__btn-wrapper {
+    margin-top: 33px;
+    margin-bottom: 34px;
   }
   .feedback__btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     border: 1px solid @light-grey;
-    padding: 11px 38px;
-    padding-bottom: 38px;
-  }
-
+    background-color: @body-color;
+    padding: 0;
+    margin-right: -6px;
+    width: 130px;
+    height: 51px;
+    }
+    .feedback__svg {
+      width: 50px;
+      height: 26px;
+      margin-top: 12px;
+      margin-bottom: 6px;
+      margin-right: 4px;
+    }
+    .feedback__svg:hover {
+      fill: @btn-hover;
+    }
+    .feedback__svg:active {
+      fill: @btn-active;
+    }
     @media @tablet-widths {
       .feedback__wrapper{
         background: url("..img/review@1x.jpg") no-repeat;

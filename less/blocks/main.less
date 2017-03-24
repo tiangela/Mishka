@@ -9,9 +9,6 @@
   margin-bottom: 28px;
   background-color: @bgr-color;
 }
-.main__wrapper {
-  .container ();
-}
   .main__title {
     padding-top: 70px;
     padding-bottom: 80px;
@@ -31,11 +28,11 @@
     padding-right: 38px;
     padding-bottom: 123px;
     padding-top: 0;
-    background: url("../img/hero-mobile@1x.jpg") no-repeat;
+    background-repeat: no-repeat;
     background-position: center -18px;
+    background-image: url("../img/hero-mobile@1x.jpg");
     @media @retina {
       background-image: url("../img/hero-mobile@2x.jpg");
-      background-size: 1150px auto;
     }
   }
     .main__comment {
@@ -138,11 +135,11 @@
   .container ();
   padding-top: 135px;
   padding-bottom: 362px;
-  background: url("../img/hero-desktop@1x.jpg") no-repeat;
   background-position: center -2px;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-desktop@1x.jpg");
   @media @retina {
     background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 2300px auto;
   }
 }
   .main__description {
@@ -168,6 +165,9 @@
         margin: 0;
       }
     } */
+    .main__wrapper {
+      .container ();
+    }
     .main__wrapper--form {
       width: 700px;
     }
@@ -191,5 +191,10 @@
   padding-right: 200px;
   padding-top: 154px;
   padding-bottom: 358px;
+  background-size: 1050px auto;
+  background: url("../img/hero-desktop@1x.jpg") no-repeat center;
+  @media @retina {
+    background-image: url("../img/hero-desktop@2x.jpg");
+  }
 }
 }
