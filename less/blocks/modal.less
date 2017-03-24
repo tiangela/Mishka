@@ -8,22 +8,55 @@
   /*.container();*/
   .modal__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    input {
+      display: none;
+    }
   }
+  .modal__wrapper {
+  input + label {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+.modal__size + label:after {
+  display: inline-block;
+  content: "f";
+  width: 30px;
+  height: 20px;
+  border: 1px solid grey;
+  padding: 5px;
+  text-align: center;
+  margin-left: 10px;
+}
 
+input:checked + label:after {
+  border: 4px solid grey;
+}
+/*  display: block;
+  width: 72px;
+  height: 44px;
+  margin-right: 10px;
+  border: 1px solid green;
+  text-align: center;*/
+}
   .modal__form {
     p {
       text-align: center;
       margin: 0 auto;
+    }
   }
-}
   .modal__title {
+    display: block;
     font-size: 25px;
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 34px;
     padding-bottom: 20px;
+    width: 150px;
   }
   .modal__text {
     font-size: 15px;

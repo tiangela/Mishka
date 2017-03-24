@@ -1,27 +1,36 @@
 .social {
   width: 190px;
   padding-bottom: 28px;
-  padding-left: 57px;
-  padding-right: 62px;
+  padding-left: 19px;
 }
-.social__svg-inst {
-  width: 22px;
-  height: 22px;
+.social__button {
+  padding-right: 37px;
 }
-
-.social__svg-inst:hover {
-  fill: @color-green;
+.social__button:last-child {
+  padding-right: 0;
 }
-/*.social__button {
-    display: inline-block;
-    width: 30px;
-    height: 25px;
+.social__svg {
   &--ig {
-    background-size: 20px 20px;
-    background: url("../img/icon-insta.svg") center no-repeat;
+    width: 22px;
+    height: 21px;
+  }
+  &--fb {
+    width: 13px;
+    height: 31px;
+    margin-bottom: -3px;
+  }
+  &--tw {
+    width: 24px;
+    height: 20px;
   }
 }
-*/
+.social__svg:hover {
+  fill: @green-hover;
+}
+.social__svg:active {
+  fill: @green-active;
+}
+
 @media @tablet-widths {
   width: 170px;
 }

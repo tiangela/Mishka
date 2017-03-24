@@ -10,19 +10,37 @@
     justify-content: center;
 }
   .footer__copyright {
+    display: inline-block;
+    vertical-align: top;
     width: 190px;
     font-size: 19px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: @color-black;
-    padding-top: 31px;
-    padding-right: 38px;
+    padding-top: 22px;
+}
+  .footer__copyright:active {
+    color: @grey-active;
   }
   .footer__link {
-    padding-top: 21px;
-    padding-left: 53px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+    margin-top: -2px;
   }
-
+.footer__svg {
+  fill: @color-green;
+  &--academy {
+    width: 27px;
+    height: 34px;
+  }
+}
+.footer__svg:hover {
+  fill: @green-hover;
+}
+.footer__svg:active {
+  fill: @green-active;
+}
   @media @tablet-widths {
     .footer__wrapper {
       justify-content: space-between;
