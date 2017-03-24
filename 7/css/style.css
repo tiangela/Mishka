@@ -253,16 +253,29 @@ h3 {
   margin: 0;
 }
 .about {
+  width: 260px;
+  margin: 0 auto;
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
+}
+@media (min-width: 768px) {
+  .about {
+    width: 668px;
+  }
+}
+@media (min-width: 1150px) {
+  .about {
+    width: 1050px;
+  }
 }
 .about__list {
   margin: 0;
   padding: 0;
+  padding-top: 7px;
   list-style: none;
 }
 .about__title {
-  padding-top: 4px;
+  padding-top: 0;
   padding-bottom: 30px;
 }
 .about__item {
@@ -272,26 +285,93 @@ h3 {
   font-weight: 600;
   padding-top: 55px;
   padding-bottom: 28px;
+  padding-right: 36px;
   color: #444;
 }
 .about__item--material {
   padding-right: 64px;
 }
+.about__item--material::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 37px;
+  background: url("../img/icon-feature-1.svg");
+  top: 0;
+  left: 9px;
+}
 .about__item--style {
   padding-right: 36px;
 }
-.about__item svg {
+.about__item--style::before {
   position: absolute;
-  fill: #63d1bb;
-}
-.about__item #material {
-  top: 2px;
-  left: 9px;
-}
-.about__item #money {
-  top: 2px;
+  content: "";
+  width: 47px;
+  height: 27px;
+  background: url("../img/icon-feature-3.svg");
+  top: 0;
   left: 1px;
 }
+.about__item--like {
+  padding-right: 58px;
+}
+.about__item--like::before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 27px;
+  background: url("../img/icon-feature-5.svg");
+  top: 7px;
+  left: 8px;
+}
+.about__item--love {
+  padding-right: 48px;
+}
+.about__item--love::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 34px;
+  background: url("../img/icon-feature-2.svg");
+  top: 4px;
+  left: 4px;
+}
+.about__item--producer {
+  padding-right: 0;
+}
+.about__item--producer::before {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 23px;
+  background: url("../img/icon-feature-4.svg");
+  top: 5px;
+  left: -4px;
+}
+.about__item--box {
+  padding-right: 24px;
+}
+.about__item--box::before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 32px;
+  background: url("../img/icon-feature-6.svg");
+  top: 0;
+  left: 1px;
+}
+/*.about__svg {
+    position: absolute;
+    fill: @color-green;
+  &--material {
+
+  }
+  &--style {
+    top: 2px;
+    left: 1px;
+  }
+  &--like {
+  }*/
 @media (min-width: 768px) {
   .about {
     padding-top: 57px;
@@ -337,29 +417,32 @@ h3 {
     margin-bottom: 0;
     padding-bottom: 12px;
   }
-  .about__item #material {
-    top: 50px;
-    left: 15px;
-  }
-  .about__item #money {
-    top: 60px;
-    left: 1px;
-  }
 }
 .button {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 16px;
   font-weight: 600;
+  display: block;
   color: #444;
   border: 2px solid #444;
   background-color: #fff;
-  padding: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   text-decoration: none;
+  width: 260px;
+  height: 52px;
+  text-align: center;
 }
 .button--basket {
   display: none;
+}
+.button--feedback {
+  margin-bottom: 40px;
+}
+.button--contacts {
+  margin: 0 auto;
 }
 .catalog {
   width: 100%;
@@ -488,6 +571,20 @@ h3 {
   padding-top: 31px;
   padding-bottom: 30px;
 }
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 668px;
+  }
+}
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    width: 1050px;
+  }
+}
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
@@ -524,11 +621,6 @@ h3 {
 .contacts__item--address p {
   padding-right: 30px;
 }
-.contacts__item .map {
-  width: 100%;
-  height: 460px;
-  background-color: green;
-}
 @media (min-width: 768px) {
   .contacts {
     font-size: 17px;
@@ -555,6 +647,8 @@ h3 {
     display: flex;
     padding-top: 280px;
     padding-bottom: 117px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contacts__title {
     font-size: 53px;
@@ -600,14 +694,14 @@ h3 {
   }
 }
 .feedback__title {
-  padding-bottom: 33px;
+  padding-bottom: 20px;
 }
 .feedback__text {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: #444;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
 }
 .feedback__user {
   font-size: 18px;
@@ -622,11 +716,35 @@ h3 {
   font-weight: 400;
   color: #444;
   padding-bottom: 31px;
+  text-decoration: none;
+}
+.feedback__btn-wrapper {
+  margin-top: 33px;
+  margin-bottom: 34px;
 }
 .feedback__btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   border: 1px solid #ececec;
-  padding: 11px 38px;
-  padding-bottom: 38px;
+  background-color: #fff;
+  padding: 0;
+  margin-right: -6px;
+  width: 130px;
+  height: 51px;
+}
+.feedback__svg {
+  width: 50px;
+  height: 26px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+.feedback__svg:hover {
+  fill: #666666;
+}
+.feedback__svg:active {
+  fill: #b2b2b2;
 }
 @media (min-width: 768px) {
   .feedback__wrapper {
@@ -900,20 +1018,6 @@ h3 {
   margin-bottom: 28px;
   background-color: #f1f1f1;
 }
-.main__wrapper {
-  width: 260px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .main__wrapper {
-    width: 668px;
-  }
-}
-@media (min-width: 1150px) {
-  .main__wrapper {
-    width: 1050px;
-  }
-}
 .main__title {
   padding-top: 70px;
   padding-bottom: 80px;
@@ -933,13 +1037,13 @@ h3 {
   padding-right: 38px;
   padding-bottom: 123px;
   padding-top: 0;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-repeat: no-repeat;
   background-position: center -18px;
+  background-image: url("../img/hero-mobile@1x.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main__title-container {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 1150px auto;
   }
 }
 .main__comment {
@@ -1043,8 +1147,9 @@ h3 {
     margin: 0 auto;
     padding-top: 135px;
     padding-bottom: 362px;
-    background: url("../img/hero-desktop@1x.jpg") no-repeat;
     background-position: center -2px;
+    background-repeat: no-repeat;
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
   .main__description {
     font-size: 17px;
@@ -1083,7 +1188,6 @@ h3 {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .main__title-container {
     background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 2300px auto;
   }
 }
 @media (min-width: 1150px) {
@@ -1094,6 +1198,10 @@ h3 {
         margin: 0;
       }
     } */
+  .main__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
   .main__wrapper--form {
     width: 700px;
   }
@@ -1118,20 +1226,74 @@ h3 {
     padding-right: 200px;
     padding-top: 154px;
     padding-bottom: 358px;
+    background-size: 1050px auto;
+    background: url("../img/hero-desktop@1x.jpg") no-repeat center;
   }
 }
-/*.map {
+@media (min-width: 1150px) and (min-width: 768px) {
+  .main__wrapper {
+    width: 668px;
+  }
+}
+@media (min-width: 1150px) and (min-width: 1150px) {
+  .main__wrapper {
+    width: 1050px;
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .main__title-container {
+    background-image: url("../img/hero-desktop@2x.jpg");
+  }
+}
+.map {
+  position: relative;
   width: 100%;
   display: block;
   height: 460px;
+  margin-top: 10px;
   margin-bottom: 40px;
+  background: url("../img/map-mobile@1x.jpg") no-repeat;
+  background-position: center;
+  background-size: 100% auto;
 }
-@media @desktop-widths {
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
-    width: 50%;
+    background: url("../img/map-mobile@2x.jpg");
   }
 }
-*/
+.map::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+  width: 66px;
+  height: 98px;
+  bottom: 184px;
+  left: 135px;
+}
+@media (min-width: 768px) {
+  .map {
+    background: url("../img/map-mobile@1x.jpg") no-repeat;
+    background-position: center;
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .map {
+    background: url("../img/map-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1150px) {
+  .map {
+    width: 50%;
+    background: url("../img/map-desktop@1x.jpg") no-repeat;
+    background-size: 1150px auto;
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .map {
+    background: url("../img/map-desktop@2x.jpg");
+  }
+}
 .menu {
   width: 320px;
   /*смотрится не очень, не могу придумать как по-другому задать, 100% не работает*/
@@ -1305,7 +1467,9 @@ h3 {
   line-height: 24px;
   font-weight: 400;
   color: #444;
-  padding-bottom: 5px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .product__table {
   font-size: 15px;
@@ -1330,8 +1494,8 @@ h3 {
   line-height: 24px;
   font-weight: 600;
   color: #444;
-  padding-top: 7px;
-  padding-bottom: 29px;
+  padding-top: 2px;
+  padding-bottom: 18px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1364,7 +1528,7 @@ h3 {
     width: 50%;
     padding-top: 24px;
   }
-  .product__image--wrapper {
+  .product__image--wrapper picture {
     position: absolute;
     right: 0;
     top: 151px;
@@ -1412,7 +1576,7 @@ h3 {
     padding-bottom: 70px;
     padding-right: 50px;
   }
-  .product__image--wrapper {
+  .product__image--wrapper picture {
     width: 525px;
     z-index: 1;
   }
@@ -1429,14 +1593,27 @@ h3 {
 }
 .social {
   width: 190px;
-  display: block;
-  /*временно*/
-  color: black;
-  /*временно*/
   padding-bottom: 28px;
   padding-left: 57px;
   padding-right: 62px;
 }
+.social__svg-inst {
+  width: 22px;
+  height: 22px;
+}
+.social__svg-inst:hover {
+  fill: #63d1bb;
+}
+/*.social__button {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+  &--ig {
+    background-size: 20px 20px;
+    background: url("../img/icon-insta.svg") center no-repeat;
+  }
+}
+*/
 @media (min-width: 768px) {
   width: 170px;
 }
