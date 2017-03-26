@@ -1,13 +1,17 @@
 .main {
   width: 100%;
 }
-
+.main__wrapper {
+  &--form {
+    .container();
+  }
+}
 .main__title-wrapper--index {
   background-color: @title-grey;
 }
 .main__title-wrapper--catalog, .main__title-wrapper--form  {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 19px;
   background-color: @bgr-color;
 }
   .main__title {
@@ -17,13 +21,11 @@
     &--index {
       padding-bottom: 16px;
       text-align: center;
+    }
     &--form {
-      padding-bottom: 70px;
-      padding-top: 71px;
       padding-left: 0;
     }
     }
-  }
   .main__title-container {
     padding-left: 38px;
     padding-right: 38px;
@@ -44,8 +46,8 @@
     line-height: 24px;
     font-weight: 400;
     color: @color-grey;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 0px;
+    margin-bottom: 24px;
   }
   .main__link {
     text-decoration: none;
