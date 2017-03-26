@@ -37,7 +37,13 @@
     <section class="catalog">
       <div class="catalog__wrapper">
         <article class="catalog__item">
-          <a class="catalog__image" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото зайчика"></a>
+          <a class="catalog__image" href="#">
+            <!--  <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x"> -->
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg" width="260" height="195" alt="Фото зайчика">
+
+          </a>
           <div class="catalog__container">
           <h3><a class="catalog__title" href="#">Зайчик-попрыгайчик</a></h3>
           <span class="catalog__feature">Рост 30 см, вес 200 г</span>
@@ -46,7 +52,13 @@
           </div>
       </article>
         <article class="catalog__item">
-          <a class="catalog__image" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки"></a>
+          <a class="catalog__image" href="#">
+            <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg" width="260" height="195" alt="Фото корзинки">
+            </picture>
+          </a>
           <div class="catalog__container">
           <h3><a class="catalog__title" href="#">Корзинка для белья</a></h3>
           <span class="catalog__feature">Диаметр 15 см, высота 10 см</span>
@@ -55,7 +67,13 @@
         </div>
         </article>
         <article class="catalog__item">
-          <a class="catalog__image" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото большой корзинки"></a>
+          <a class="catalog__image" href="#">
+            <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg" width="260" height="195" alt="Фото большой корзинки">
+            </picture>
+          </a>
           <div class="catalog__container">
           <h3><a class="catalog__title" href="#">Большая корзинка для игрушек</a></h3>
           <span class="catalog__feature">Диаметр 30 см, высота 30 см</span>
