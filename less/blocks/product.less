@@ -3,7 +3,6 @@
 }
   .product__title {
     padding-top: 28px;
-    padding-bottom: 3px;
   }
   .product__slogan {
     text-transform: uppercase;
@@ -22,8 +21,8 @@
     font-weight: 400;
     color: @color-grey;
     margin: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 19px;
+    margin-bottom: 17px;
   }
   .product__table {
     font-size: 15px;
@@ -35,11 +34,13 @@
       .product__row {
       border-bottom: 1px solid @light-grey;
         .product__feature {
+          padding-bottom: 8px;
           padding-top: 8px;
-          padding-bottom: 7px;
         }
         .product__value {
-          padding-left: 32px;
+          padding-bottom: 8px;
+          padding-top: 8px;
+          padding-left: 35px;
         }
   }
 }
@@ -49,7 +50,7 @@
     font-weight: 600;
     color: @color-grey;
     padding-top: 0px;
-    padding-bottom: 13px;
+    padding-bottom: 8px;
     text-align: center;
   }
 
@@ -58,23 +59,35 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom: 10px;
 }
   .product__table {
     font-size: 15px;
     line-height: 20px;
+    .product__row {
+      .product__feature {
+        padding-bottom: 9px;
+        padding-top: 10px;
+      }
+      .product__value {
+        padding-bottom: 9px;
+        padding-top: 10px;
+      }
+    }
   }
   .product__title {
     text-align: left;
     width: 500px;
     box-sizing: border-box;
-    margin-right: 72px;
+    margin-right: 66px;
+    margin-left: -3px;
     padding-top: 54px;
     padding-bottom: 6px;
   }
   .product__slogan {
     width: 80px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 64px;
     box-sizing: border-box;
     }
   .product__wrapper {
@@ -84,7 +97,7 @@
   .product__image--wrapper picture {
     position: absolute;
     right: 0;
-    top: 151px;
+    top: 161px;
     width: 334px;
   }
   .product__text {
@@ -93,12 +106,15 @@
     font-weight: 400;
     color: @color-grey;
     padding-right: 35px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
   }
   .product__price {
     font-size: 20px;
     line-height: 24px;
     padding-top: 28px;
+    padding-left: 76px;
+    padding-bottom: 15px;
+    text-align: left;
   }
 }
 

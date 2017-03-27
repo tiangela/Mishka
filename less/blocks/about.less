@@ -10,7 +10,7 @@
     list-style: none;
   }
   .about__title {
-    padding-top: 0;
+    padding-top: 2px;
     padding-bottom: 30px;
   }
   .about__item {
@@ -31,7 +31,7 @@
       width: 32px;
       height: 37px;
       background: url("../img/icon-feature-1.svg");
-      top: 0;
+      top: -4px;
       left: 9px;
     }
     &--style {
@@ -43,7 +43,7 @@
       width: 47px;
       height: 27px;
       background: url("../img/icon-feature-3.svg");
-      top: 0;
+      top: -5px;
       left: 1px;
     }
     &--like {
@@ -55,8 +55,8 @@
       width: 33px;
       height: 27px;
       background: url("../img/icon-feature-5.svg");
-      top: 7px;
-      left: 8px;
+      top: 0px;
+      left: 10px;
     }
     &--love {
       padding-right: 48px;
@@ -67,8 +67,8 @@
       width: 35px;
       height: 34px;
       background: url("../img/icon-feature-2.svg");
-      top: 4px;
-      left: 4px;
+      top: -2px;
+      left: 5px;
     }
     &--producer {
       padding-right: 0;
@@ -79,7 +79,7 @@
       width: 56px;
       height: 23px;
       background: url("../img/icon-feature-4.svg");
-      top: 5px;
+      top: -2px;
       left: -4px;
     }
     &--box {
@@ -91,28 +91,21 @@
       width: 33px;
       height: 32px;
       background: url("../img/icon-feature-6.svg");
-      top: 0;
-      left: 1px;
+      top: -4px;
+      left: 5px;
     }
   }
-/*.about__svg {
-    position: absolute;
-    fill: @color-green;
-  &--material {
-
-  }
-  &--style {
-    top: 2px;
-    left: 1px;
-  }
-  &--like {
-  }*/
-
 @media @tablet-widths {
   .about {
-    padding-top: 57px;
-    padding-bottom: 105px;
+    padding-top: 35px;
   }
+  .about__container::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg");
+    }
    .about__list {
     display: flex;
     flex-wrap: wrap;
@@ -120,14 +113,38 @@
   .about__title {
     padding-top: 33px;
     padding-bottom: 50px;
+    margin-left: -7px;
   }
   .about__item {
+    font-size: 20px;
+    line-height: 22px;
     width: 334px;
     padding-right: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 27px;
+    &--material {
+      padding-right: 115px;
+      order: -1;
     }
-    .about__item:first-child {
-      padding-right: 30px;
+    &--style {
+      padding-right: 71px;
+      order: 2;
+    }
+    &--like {
+      padding-right: 101px;
+      order: 5;
+    }
+    &--love {
+      padding-right: 38px;
+      order: 1;
+    }
+    &--producer {
+      padding-right: 38px;
+      order: 4;
+    }
+    &--box {
+    padding-right: 85px;
+    order: 6;
+    }
     }
 }
 @media @desktop-widths {
