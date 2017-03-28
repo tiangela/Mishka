@@ -61,12 +61,17 @@
     @media @tablet-widths {
       .feedback {
         position: relative;
+        padding-bottom: 77px;
         background: url("../img/review@1x.jpg") no-repeat;
         background-position: left top;
+        @media @retina {
+        background: url("../img/review@2x.jpg") no-repeat;
+        background-size: cover;
+        }
       }
       .feedback__title {
         padding-bottom: 50px;
-        padding-top: 74px;
+        padding-top: 77px;
         margin-left: -5px;
         display: block;
         width: 500px;
@@ -74,7 +79,7 @@
       .feedback__btn {
         position: absolute;
         border: none;
-        bottom: 64px;
+        bottom: 118px;
         right: 0;
           &--current {
             right: 120px;

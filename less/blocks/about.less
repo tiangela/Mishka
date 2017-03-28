@@ -97,23 +97,30 @@
   }
 @media @tablet-widths {
   .about {
-    padding-top: 35px;
+    padding-top: 26px;
   }
-  .about__container::before {
+  .about__container {
+    position: relative;
+  }
+  .about__container::after {
       content: "";
       position: absolute;
       width: 100%;
-      height: 23px;
+      width: 100%;
+      height: 17px;
       background: url("../img/bg-zigzag-line.svg");
-    }
+      background-repeat: repeat-x;
+      background-size: auto 17px;
+      top: 0px;
+  }
    .about__list {
     display: flex;
     flex-wrap: wrap;
   }
   .about__title {
-    padding-top: 33px;
-    padding-bottom: 50px;
-    margin-left: -7px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    margin-left: -5px;
   }
   .about__item {
     font-size: 20px;

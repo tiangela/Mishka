@@ -12,7 +12,6 @@
     font-weight: 600;
     color: @color-black;
     display: block;
-    padding-bottom: 27px;
   }
   .contacts__list {
     list-style: none;
@@ -30,6 +29,8 @@
     span {
       display: table-cell;
       padding-right: 32px;
+      padding-top: 27px;
+      padding-bottom: 3px;
     }
      p {
        display: table-cell;
@@ -38,7 +39,9 @@
       display: block;
       text-decoration: none;
       color: @color-grey;
-      padding-bottom: 29px;
+    }
+    &--mail a {
+      border-bottom: 1px solid @color-green;
     }
       &--address {
         p {
@@ -50,19 +53,43 @@
       .contacts {
         font-size: 17px;
         line-height: 30px;
-        padding-top: 143px;
+        padding-top: 76px;
         padding-bottom: 58px;
+        background: url("../img/bg-zigzag-line.svg");
+        background-repeat: repeat-x;
+        background-size: 833px auto;
+        background-position: top;
+      }
+      .contacts__wrapper {
+        margin-bottom: 12px;
       }
       .contacts__title {
         font-size: 43px;
         line-height: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 21px;
+        margin-left: -5px;
+        position: relative;
       }
+      .contacts__title::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon-flag.svg");
+        width: 47px;
+        height: 82px;
+        right: 3px;
+        bottom: 3px;
+    }
       .contacts__item {
+        font-size: 17px;
+        line-height: 30px;
         display: table-cell;
         width: 334px;
+        span{
+          padding-right: 24px;
+        }
           &--mail a {
           display: inherit;
+
       }
       }
     }

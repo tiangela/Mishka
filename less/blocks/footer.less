@@ -1,5 +1,5 @@
   .footer {
-    padding-top: 23px;
+    padding-top: 21px;
     padding-bottom: 22px;
     background-color: @bgr-color;
 }
@@ -43,13 +43,27 @@
   fill: @green-active;
 }
   @media @tablet-widths {
+    .footer {
+      padding-top: 53px;
+    }
     .footer__wrapper {
       justify-content: space-between;
     }
     .footer__logo {
-      width: 167px;
+      display: block;
+      width: 104px;
+      height: 34px;
+      background-image: url("../img/logo-footer.svg");
+      background-repeat: no-repeat;
+      margin-top: -4px;
     }
     .footer__copyright {
-      width: 184px;
+      padding-top: 8px;
+      padding-left: 1px;
+      width: 185px;
+    }
+    .footer__link {
+      margin-left: 24px;
+      margin-top: -5px;
     }
   }
