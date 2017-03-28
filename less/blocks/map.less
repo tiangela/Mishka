@@ -8,12 +8,10 @@
   background: url("../img/map-mobile@1x.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-}
   @media @retina {
-    .map {
     background: url("../img/map-mobile@2x.jpg");
-    }
   }
+}
 .map::before {
   content: "";
   position: absolute;
@@ -27,23 +25,21 @@
   .map {
   background: url("../img/map-tablet@1x.jpg") no-repeat;
   background-position: center;
-}
-.map::before {
-  left: 348px;
-}
   @media @retina {
-    .map {
-    background: url("../img/map-tablet@2x.jpg");
+  background: url("../img/map-tablet@2x.jpg");
   }
 }
+  .map::before {
+    left: 348px;
+  }
 }
+
 @media @desktop-widths {
   .map {
     width: 50%;
     background: url("../img/map-desktop@1x.jpg") no-repeat;
-  }
+    margin-top: -71px;
     @media @retina {
-      .map {
       background: url("../img/map-desktop@2x.jpg");
     }
   }

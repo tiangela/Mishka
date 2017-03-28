@@ -69,6 +69,17 @@
         background-size: cover;
         }
       }
+      .feedback::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 23px;
+        background: url("../img/bg-zigzag-line.svg");
+        background-repeat: repeat-x;
+        background-size: 833px auto;
+        background-position: top;
+        bottom: 0;
+      }
       .feedback__title {
         padding-bottom: 49px;
         padding-top: 78px;
@@ -102,12 +113,29 @@
     }
 
     @media @desktop-widths {
+  .feedback {
+    background-image: none;
+  }
+
   .feedback__wrapper {
     padding-left: 175px;
+    height: 456px;
+    background: url("../img/review@1x.jpg") no-repeat;
+    background-position: left top;
+    @media @retina {
+    background: url("../img/review@2x.jpg") no-repeat;
+    background-size: cover;
+    }
     }
   .feedback__text {
     padding-bottom: 34px;
     padding-right: 102px;
   }
-  .feedback__btn
+  .feedback__title {
+    margin-left: 0;
+  }
+  .feedback__btn {
+    border-bottom: 165px;
+    margin-right: 90px;
+  }
 }
