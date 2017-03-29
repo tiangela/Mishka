@@ -39,11 +39,12 @@
 
 @media @tablet-widths {
   .catalog {
-    padding-top: 90px;
+    padding-top: 80px;
   }
   .catalog__item {
     display: flex;
     margin-bottom: 54px;
+    height: 334px;
 }
   .catalog__title {
     font-size: 20px;
@@ -51,6 +52,9 @@
     padding-top: 24px;
     padding-left: 22px;
     padding-right: 40px;
+    &--basket {
+      padding-right: 100px;
+    }
   }
   .catalog__image {
     width: 50%;
@@ -58,16 +62,21 @@
   .catalog__container {
     width: 50%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .catalog__feature {
     font-size: 15px;
-    margin-bottom: 158px;
     padding-left: 23px;
+  }
+  .catalog__text {
+    margin-left: 3px;
   }
   .catalog__price {
     font-size: 17px;
     padding-top: 21px;
-    margin-left: 40px;
+    margin-left: 31px;
     margin-right: 40px;
   }
 }
