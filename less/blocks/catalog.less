@@ -44,7 +44,6 @@
   .catalog__item {
     display: flex;
     margin-bottom: 54px;
-    height: 334px;
 }
   .catalog__title {
     font-size: 20px;
@@ -90,12 +89,17 @@
 .catalog__title {
   padding-left: 0;
   padding-right: 0;
+  padding-top: 21px;
+  &--basket {
+    padding-right: 20px;
+  }
 }
   .catalog__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 315px;
+    margin-bottom: 21px;
   }
   .catalog__image {
    width: 100%;
@@ -105,11 +109,14 @@
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
-    margin-left: 28px;
+    margin-left: 23px;
     min-height: 195px;
   }
  .catalog__price {
    min-height: 73px;
+   padding-top: 18px;
+   margin-left: 3px;
+   margin-right: 0;
  }
  .catalog__feature {
    padding-left: 0;

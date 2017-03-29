@@ -7,9 +7,14 @@
 .main__title-wrapper--index {
   background-color: @title-grey;
 }
-.main__title-wrapper--catalog, .main__title-wrapper--form  {
+.main__title-wrapper--catalog  {
   text-align: center;
   margin-bottom: 26px;
+  background-color: @bgr-color;
+}
+.main__title-wrapper--form {
+  text-align: center;
+  margin-bottom: 20px;
   background-color: @bgr-color;
 }
   .main__title {
@@ -187,9 +192,17 @@
       padding: 0;
     }
   }
-  .main__title-wrapper::before {
-
-  }
+  .main__title-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 1150px auto;
+    background-position: bottom;
+    bottom: -10px;
+}
   .main__description {
     margin-top: 142px;
     }
@@ -197,10 +210,16 @@
     width: 175px;
 }
   .main__title-wrapper--catalog, .main__title-wrapper--form  {
-    margin-bottom: 138px;
+    margin-bottom: 40px;
 }
 .main__container {
+  &--index {
   height: 744px;
+}
+  &--catalog {
+    padding-top: 80px;
+    padding-bottom: 19px;
+  }
 }
 .main__title-container {
   padding-left: 203px;
