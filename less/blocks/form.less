@@ -337,6 +337,11 @@
 }
 
 @media @desktop-widths {
+.form textarea {
+  padding-bottom: 72px;
+  font-size: 19px;
+  line-height: 18px;
+}
 .form__title {
   padding-right: 0;
   margin-left: 60px;
@@ -346,11 +351,11 @@
   }
 .form__list-wrapper {
   padding-top: 62px;
-  padding-bottom: 25px;
-  margin-bottom: 51px;
+  padding-bottom: 19px;
+  margin-bottom: 50px;
 }
 .form__list {
-  &--type {
+    &--type {
     margin-bottom: 19px;
   }
   &--phone {
@@ -358,6 +363,9 @@
   }
   &--color {
     margin-bottom: 47px;
+  }
+  &--add {
+    margin-bottom: -2px;
   }
 }
 
@@ -386,6 +394,14 @@
     }
   }
 }
-.form__label {
+.form__wrapper {
+  &--down {
+    justify-content: center;
+  }
+  }
+  .form__comment {
+    padding-left: 141px;
+    margin-top: 16px;
+    margin-bottom: 27px;
   }
 }
