@@ -9,6 +9,7 @@
     padding-right: 23px;
     font-size: 17px;
     line-height: 18px;
+    color: @color-grey;
     width: 100%;
   }
   textarea:hover, textarea:focus {
@@ -33,13 +34,18 @@
     margin-bottom: 31px;
     }
     &--phone {
-      margin-bottom: 24px;
+      margin-bottom: 31px;
     }
     &--mail {
       margin-bottom: 32px;
     }
     &--add{
       margin-bottom: 0;
+    }
+  }
+  .form__container {
+    .form__input {
+      height: 53px;
     }
   }
   .form__title {
@@ -56,10 +62,10 @@
       padding-bottom: 11px;
     }
     &--phone {
-      padding-bottom: 17px;
+      padding-bottom: 5px;
     }
     &--mail {
-      padding-bottom: 17px;
+      padding-bottom: 7px;
     }
     &--add {
       padding-bottom: 25px;
@@ -79,7 +85,6 @@
   font-size: 17px;
   line-height: 18px;
   border-bottom: 2px solid @color-black;
-  padding-bottom: 18px;
   padding-right: 41px;
   width: 100%;
   &--radio, &--checkbox {
@@ -103,6 +108,9 @@
   &--mail:hover, &--mai:focus {
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32px' height='32px' viewBox='0 0 32 32' enable-background='new 0 0 32 32' xml:space='preserve'%3E%3Cpath id='mail' fill='%2363d1bb' d='M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z'/%3E%3C/svg%3E%0A");
   }
+  &--text {
+    height: 53px;
+  }
  }
  .form__input:hover, .form__input:focus {
   border-bottom: 2px solid @color-green;
@@ -113,13 +121,12 @@
   line-height: 18px;
   font-weight: 600;
   display: block;
-  padding-bottom: 17px;
   padding-top: 8px;
   padding-left: 64px;
   &--text {
     padding-left: 0;
     padding-top: 21px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
   &--text:first-child {
     padding-top: 18px;
@@ -128,6 +135,9 @@
     padding-top: 11px;
     padding-bottom: 32px;
     width: 260px;
+  }
+  &--radio {
+    padding-bottom: 17px;
   }
   &--radio:first-child {
     width: 200px;
@@ -141,6 +151,12 @@
     border-radius: 50%;
     top: 2px;
     left: 0px;
+  }
+  &--radio:hover::before {
+    border: 1px solid @color-green;
+  }
+  &--radio:active::before {
+    border: 1px solid @modal-grey;
   }
   input:checked + &--radio::after {
     position: absolute;
@@ -162,6 +178,14 @@
     top: 0px;
     left: 0px;
   }
+
+  &--checkbox:hover::before {
+    border: 1px solid @color-green;
+  }
+  &--checkbox:active::before {
+    border: 1px solid @modal-grey;
+  }
+
   input:checked + &--checkbox::after {
     position: absolute;
     content: "";

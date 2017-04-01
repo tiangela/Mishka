@@ -9,16 +9,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+  .footer__logo {
+    display: none;
+  }
   .footer__copyright {
     display: inline-block;
     vertical-align: top;
-    width: 190px;
+    width: 260px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 600;
     color: @color-black;
-    padding-top: 20px;
+    padding-top: 27px;
     padding-left: 3px;
+    border-top: 1px solid @footer-grey;
+    span {
+      padding-left: 35px;
+    }
 }
   .footer__copyright:active {
     color: @grey-active;
@@ -53,10 +60,15 @@
       display: block;
       width: 104px;
       height: 34px;
-      background-image: url("../img/logo-footer.svg");
-      background-repeat: no-repeat;
       margin-top: -4px;
     }
+    .footer__logo svg:hover {
+      fill: @green-hover;
+    }
+    .footer__logo svg:active {
+      fill: @green-active;
+    }
+
     .footer__copyright {
       padding-top: 8px;
       padding-left: 1px;
