@@ -1,15 +1,55 @@
 .menu {
-  width: 320px; /*смотрится не очень, не могу придумать как по-другому задать, 100% не работает*/
-  min-height: 50px;
+  width: 320px;
+  min-height: 75px;
   margin: 0 auto;
   background-color: @body-color;
   z-index: 3;
-  display: none;
+  &--closed .menu__toggle::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_o' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    }
+  &--open .menu__toggle::before {
+   content: "";
+   position: absolute;
+   width: 21px;
+   height: 21px;
+   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E%0A");
+   background-repeat: no-repeat;
+  }
 }
-  .menu__wrapper {
+.menu__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: @body-color;
   }
+  .menu__logo {
+    height: 80px;
+    width: 90px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .menu__link img {
+    margin: 0 auto;
+    margin-top: 21px;
+    display: block;
+  }
+  .menu__toggle {
+    position: absolute;
+    top: 31px;
+    right: 29px;
+    z-index: 40;
+    display: block;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    background-color: @body-color;
+ }
   .menu__list, .menu__user {
     padding: 0;
     margin: 0;
@@ -29,25 +69,142 @@
       padding-left: 75px;
       padding-top: 30px;
       padding-bottom: 30px;
+      position: relative;
+  }
+.menu__link:hover, .menu__user-link:hover {
+  color: @btn-hover;
+}
+.menu__link:active, .menu__user-link:active {
+  color: @btn-active;
+}
+.menu__user-link svg {
+  left: 22px;
+  top: 33px;
+  position: absolute;
+  fill: @btn-grey;
+}
+.menu__user-link:hover svg {
+  fill: @color-green;
+}
+.menu__user-link:active svg {
+  fill: @basket-active;
+}
+
+@media @mobile-widths-only {
+.menu__logo {
+    display: block;
+  }
+  .menu--closed {
+    .menu__list {
+    display: none;
+}
+    .menu__user {
+    display: none;
+  }
+}
+  .menu--open .menu__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: @body-color;
+    width: 100%;
+    z-index: 30;
+  }
+  .menu--open .menu__toggle {
+    position: absolute;
   }
 
-  @media @tablet-widths {
-  .menu {
-    width: auto;
+    .menu--nojs {
+      .menu__toggle {
+        display: none;
+      }
+      .menu__wrapper {
+        position: static;
+        height: auto;
+        }
+        .menu__list, .menu__user {
+        display: block;
+    }
+    }
   }
-  .menu__button {
-    display: none;
+@media @tablet-widths {
+  .menu {
+    margin: 0;
+    width: auto;
+    height: 90px;
+    background-color: transparent;
   }
   .menu__wrapper {
     flex-direction: row;
-      ul {
-        list-style: none;
-        li {
-          display: inline-block;
-        }
-      }
+    flex-wrap: wrap;
+    background-color: transparent;
+    }
+  .menu__logo {
+    margin: 0;
+    height: 89px;
+    width: 320px;
+    order: -2;
   }
-   .menu__link {
+  .menu__toggle {
+  display: none;
+}
+  .menu__list {
+    display: flex;
+    order: 2;
+    margin-top: 30px;
+    width: 334px;
+  }
+  .menu__user {
+    display: flex;
+    prder: -1;
+    width: 348px;
+  }
+
+.menu__item, .menu__user-item {
+  vertical-align: top;
+  display: inline-block;
+  border-top: none;
+}
+
+.menu__user-item {
+  &--search {
+    border-right: 1px solid @light-grey;
+  }
+}
+
+    .menu__link {
+      display: block;
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      line-height: 24px;
+      &--catalog {
+      background-color: transparent;
+      }
+      &--form {
+        background-color: transparent;
+      }
+    }
+    .menu__user-link {
+      display: block;
+      padding: 0;
+      margin: 0;
+      svg {
+        position: relative;
+      }
+        &--search {
+        font-size: 0;
+        width: 82px;
+        border-right: 1px solid @light-grey;
+        }
+        &--basket {
+          text-align: right;
+          padding-top: 20px;
+          width: 265px;
+        }
+    }
+  /* .menu__link {
       position: absolute;
       &--catalog {
         bottom: 0px;
@@ -68,12 +225,11 @@
   .menu__item, .menu__user-item {
     border: none;
   }
-}
-
 .menu__link, .menu__user-link {
   padding-left: 50px;
+  }*/
 }
-  @media @desktop-widths {
+@media @desktop-widths {
   .menu__link {
     position: relative;
   }
