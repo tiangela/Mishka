@@ -138,6 +138,17 @@
           left: 0;
       }
     }
+
+  .main__item {
+    padding-left: 37px;
+    &--light::after {
+      top: 30px;
+    }
+    &--dark::after {
+      right: 32px;
+      top: 31px;
+    }
+  }
   /*.main__title-wrapper::after {
     position: absolute;
     content: "";
@@ -209,6 +220,7 @@
   @media @desktop-widths {
     .main__link {
       height: 123px;
+      padding-top: 25px;
     }
     .main__wrapper {
       .container ();
@@ -222,17 +234,6 @@
       padding: 0;
     }
   }
-/*  .main__title-wrapper::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 37px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 1150px auto;
-    background-position: bottom;
-    bottom: -18px;
-}*/
   .main__description {
     margin-top: 129px;
     padding-left: 175px;
@@ -240,6 +241,7 @@
   }
   .main__item {
     width: 175px;
+    padding-left: 38px;
 }
 .main__title-wrapper {
   &--catalog, &--form {
@@ -260,9 +262,9 @@
   }
 }
 .main__title-container {
-  padding-left: 203px;
+  padding-left: 205px;
   padding-right: 200px;
-  padding-top: 154px;
+  padding-top: 155px;
   background: url("../img/hero-desktop@1x.jpg") no-repeat center;
   background-size: 1149px auto;
   background-position: top;
