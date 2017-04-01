@@ -5,6 +5,20 @@
 .about__wrapper {
     .container ();
 }
+.about__container {
+  position: relative;
+}
+.about__container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    background: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 308px auto;
+    top: 0px;
+  }
+
 .about__list {
     margin: 0;
     padding: 0;
@@ -100,9 +114,6 @@
 @media @tablet-widths {
   .about {
     padding-top: 26px;
-  }
-  .about__container {
-    position: relative;
   }
   .about__container::after {
       content: "";

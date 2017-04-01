@@ -2,11 +2,21 @@
   padding-bottom: 24px;
   position: relative;
 }
+.feedback::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  background: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 308px auto;
+  bottom: -3px;
+}
 .feedback__wrapper {
   .container();
 }
   .feedback__title {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
   .feedback__text {
     font-size: 15px;
@@ -60,7 +70,6 @@
     }
     @media @tablet-widths {
       .feedback {
-        position: relative;
         padding-bottom: 77px;
         background: url("../img/review@1x.jpg") no-repeat;
         background-position: left top;
