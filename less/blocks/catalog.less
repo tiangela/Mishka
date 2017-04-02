@@ -58,7 +58,12 @@
   }
 @media @tablet-widths {
   .catalog {
-    padding-top: 80px;
+    padding-top: 54px;
+  }
+  .catalog__button {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
   }
   .catalog__item {
     display: flex;
@@ -69,14 +74,15 @@
   box-shadow: 0px 10px 11px 0px rgba(50, 50, 50, 0.1);
 }
 .catalog__container:active {
-  box-shadow: 0px 12px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.3);
 }
   .catalog__title {
     font-size: 20px;
     line-height: 24px;
     padding-top: 24px;
-    padding-left: 22px;
+    padding-left: 27px;
     padding-right: 40px;
+    padding-bottom: 6px;
     &--basket {
       padding-right: 100px;
     }
@@ -93,7 +99,7 @@
   }
   .catalog__feature {
     font-size: 15px;
-    padding-left: 23px;
+    padding-left: 26px;
   }
   .catalog__price {
     font-size: 17px;
@@ -104,6 +110,9 @@
 }
 
 @media @desktop-widths {
+  .catalog {
+    padding-top: 78px;
+  }
   .catalog__wrapper {
     display: flex;
     justify-content: space-between;
@@ -112,9 +121,9 @@
 .catalog__title {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 21px;
+  padding-top: 17px;
   &--basket {
-    padding-right: 20px;
+    padding-right: 50px;
   }
 }
   .catalog__item {
@@ -123,28 +132,32 @@
     justify-content: space-between;
     width: 315px;
     height: 660px;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
   .catalog__image {
    width: 100%;
+   img {
+     height: 462px;
+   }
  }
   .catalog__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 314px;
-    padding-left: 23px;
-    min-height: 195px;
-    padding-right: 51px;
+    padding-left: 27px;
+    min-height: 189px;
+    padding-right: 0;
   }
 
  .catalog__price {
-   min-height: 73px;
-   padding-top: 18px;
-   margin-left: 3px;
+   padding-top: 21px;
+   margin-left: -2px;
    margin-right: 0;
+   padding-bottom: 28px;
  }
  .catalog__feature {
+   padding-bottom: 0;
    padding-left: 0;
    margin: 0;
 }
