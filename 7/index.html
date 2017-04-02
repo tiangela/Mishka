@@ -44,17 +44,17 @@
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a></li>
             <li class="menu__item"><a class="menu__link menu__link--form" href="form.html">Вязание на заказ</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--new" href="#">Новые поступления</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--stock" href="#">Распродажа</a></li>
+            <li class="menu__item menu__item--new"><a class="menu__link menu__link--new" href="#">Новые поступления</a></li>
+            <li class="menu__item menu__item--stock"><a class="menu__link menu__link--stock" href="#">Распродажа</a></li>
           </ul>
           <ul class="menu__user">
             <li class="menu__user-item menu__user-item--search"><a class="menu__user-link menu__user-link--search" href="#"><svg
               width="17" height="17"><use xlink:href="#icon-search"/></svg>
               Поиск по сайту</a></li>
-            <li class="menu__user-item"><a class="menu__user-link menu__user-link--basket" href="#"><svg width="20" height="20"><use xlink:href="#icon-cart"/></svg>Корзина: пока пуста
+            <li class="menu__user-item menu__user-item--basket"><a class="menu__user-link menu__user-link--basket" href="#"><svg width="20" height="20"><use xlink:href="#icon-cart"/></svg>Корзина: пока пуста
             </a></li>
+            <li><span class="menu__shipping">Бесплатная доставка по России</span></li>
             </ul>
-            <span class="menu__shipping">Бесплатная доставка по России</span>
         </div>
       </nav>
     </div>
@@ -225,7 +225,9 @@
         <button class="button button--modal" type="submit">Добавить</button>
       </div>
     </form>
+    <div class="modal__overlay"></div>
   </section>
+  <script src="http://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

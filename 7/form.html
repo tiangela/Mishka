@@ -45,18 +45,18 @@
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link menu__link--catalog" href="catalog.html">Каталог товаров</a></li>
             <li class="menu__item"><a class="menu__link menu__link--form" href="form.html">Вязание на заказ</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--new" href="#">Новые поступления</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--stock" href="#">Распродажа</a></li>
+            <li class="menu__item menu__item--new"><a class="menu__link menu__link--new" href="#">Новые поступления</a></li>
+            <li class="menu__item menu__item--stock"><a class="menu__link menu__link--stock" href="#">Распродажа</a></li>
           </ul>
           <ul class="menu__user">
             <li class="menu__user-item menu__user-item--search"><a class="menu__user-link menu__user-link--search" href="#"><svg
               width="17" height="17"><use xlink:href="#icon-search"/></svg>
               Поиск по сайту</a></li>
-            <li class="menu__user-item"><a class="menu__user-link menu__user-link--basket" href="#"><svg width="20" height="20"><use xlink:href="#icon-cart"/></svg>Корзина: пока пуста
+            <li class="menu__user-item menu__user-item--basket"><a class="menu__user-link menu__user-link--basket" href="#"><svg width="20" height="20"><use xlink:href="#icon-cart"/></svg>Корзина: пока пуста
             </a></li>
+            <li><span class="menu__shipping">Бесплатная доставка по России</span></li>
             </ul>
-            <span class="menu__shipping">Бесплатная доставка по России</span>
-        </div>
+            </div>
       </nav>
     </div>
   </header>
@@ -85,21 +85,21 @@
       </div>
       <div class="form__list form__list--color">
         <div class="form__wrapper form__wrapper--color">
-        <span class="form__title">Цвет</span>
+        <span class="form__title form__title--color">Цвет</span>
         <div class="form__line"></div>
           <div class="form__container form__container--color">
             <input class="form__input form__input--checkbox" type="checkbox" name="white" id="white" checked>
-            <label for="white" class="form__label form__label--checkbox">Белый</label>
+            <label for="white" class="form__label form__label--checkbox form__label--white">Белый</label>
             <input class="form__input form__input--checkbox" type="checkbox" name="grey" id="grey" checked>
-            <label for="grey" class="form__label form__label--checkbox">Серый</label>
+            <label for="grey" class="form__label form__label--checkbox form__label--grey">Серый</label>
             <input class="form__input form__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
-            <label for="tiffany" class="form__label form__label--checkbox">«Тиффани»</label>
+            <label for="tiffany" class="form__label form__label--checkbox form__label--tiffany">«Тиффани»</label>
             <input class="form__input form__input--checkbox" type="checkbox" name="black" id="black">
-            <label for="black" class="form__label form__label--checkbox">Черный</label>
+            <label for="black" class="form__label form__label--checkbox form__label--black">Черный</label>
             <input class="form__input form__input--checkbox" type="checkbox" name="pink" id="pink">
-            <label for="pink" class="form__label form__label--checkbox">Розовый</label>
+            <label for="pink" class="form__label form__label--checkbox form__label--pink">Розовый</label>
             <input class="form__input form__input--checkbox" type="checkbox" name="orange" id="orange">
-            <label for="orange" class="form__label form__label--checkbox">Оранжевый</label>
+            <label for="orange" class="form__label form__label--checkbox form__label--orange">Оранжевый</label>
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@
       </div>
     </div>
   </footer>
+    <script src="http://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
