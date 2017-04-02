@@ -236,13 +236,13 @@
       background-color: @bgr-color;
     }
     &--name {
-      margin-bottom: 19px;
+      margin-bottom: 28px;
     }
     &--phone {
-      margin-bottom: 36px;
+      margin-bottom: 22px;
     }
     &--add {
-      margin-bottom: 20px;
+      margin-bottom: 3px;
     }
     &--mail {
       margin-bottom: 35px;
@@ -250,10 +250,9 @@
   }
 
   .form__list-wrapper {
-    padding-top: 64px;
-    padding-bottom: 16px;
+    padding-top: 48px;
+    padding-bottom: 22px;
     margin-bottom: 49px;
-    margin-bottom: 39px;
     background-color: @bgr-color;
   }
 
@@ -264,8 +263,13 @@
       &--text {
         padding-left: 21px;
       }
-      &--phone, &--mail {
+      &--phone {
       background-color: @bgr-color;
+      background-position: 454px 12px;
+      }
+      &--mail {
+        background-color: @bgr-color;
+        background-position: 446px 12px;
       }
 }
 
@@ -283,7 +287,7 @@
     }
     &--color {
     height: 302px;
-    padding-top: 52px;
+    padding-top: 50px;
     padding-right: 20px;
     margin-left: 123px;
     }
@@ -329,6 +333,7 @@
     &--checkbox {
       padding-bottom: 47px;
       padding-left: 82px;
+      margin-right: 3px;
     }
       &--checkbox::before {
       width: 48px;
@@ -336,15 +341,34 @@
     }
     input:checked + &--checkbox:after {
       width: 34px;
-      height: 20px;
+      height: 25px;
       background-image: url("../img/icon-tick.svg");
+      left: 11px;
     }
     &--text {
       padding-top: 8px;
-      padding-bottom: 50px;
+      padding-bottom: 42px;
     }
     &--accessory {
       width: 400px;
+    }
+    &--white {
+      order: -1;
+    }
+    &--tiffany {
+      order: 0;
+    }
+    &--pink {
+      order: 1;
+    }
+    &--grey {
+      order: 2;
+    }
+    &--black {
+      order: 3;
+    }
+    &--orange {
+      order: 4;
     }
   }
 
@@ -356,34 +380,42 @@
     font-size: 17px;
     line-height: 30px;
     text-align: right;
+    margin-top: 14px;
     order: 2;
   }
 }
 
 @media @desktop-widths {
 .form textarea {
-  padding-bottom: 72px;
+  padding-bottom: 90px;
+  padding-top: 12px;
   font-size: 19px;
   line-height: 18px;
 }
 .form__title {
   padding-right: 0;
-  margin-left: 60px;
+  margin-left: 64px;
   &--mail {
     margin-right: -21px;
   }
+  &--color {
+    margin-left: 61px;
+  }
   }
 .form__list-wrapper {
-  padding-top: 62px;
+  padding-top: 48px;
   padding-bottom: 19px;
   margin-bottom: 50px;
 }
 .form__list {
+  &--name {
+    margin-bottom: 27px;
+  }
     &--type {
     margin-bottom: 19px;
   }
   &--phone {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
   &--color {
     margin-bottom: 47px;
@@ -394,8 +426,15 @@
 }
 
 .form__input {
+  height: 68px;
+  &--phone {
+    background-position: 672px 12px;
+  }
+  &--mail {
+    background-position: 664px 12px;
+  }
   &--text {
-    padding-bottom: 16px;
+    padding-bottom: 0px;
   }
 }
 
@@ -404,12 +443,15 @@
     padding-left: 0;
     margin-left: 74px;
     &--color {
+      margin-left: 72px;
+      padding-top: 52px;
       height: 227px;
     }
     &--type {
-      margin-left: 78px;
+      margin-left: 74px;
     }
     &--name {
+      margin-left: 72px;
       input {
         min-width: 540px;
     }
@@ -424,8 +466,31 @@
   }
   }
   .form__comment {
-    padding-left: 141px;
+    padding-left: 174px;
     margin-top: 16px;
     margin-bottom: 27px;
   }
+.form__label {
+  &--checkbox {
+    padding-left: 80px;
+  }
+  &--white {
+    order: -1;
+  }
+  &--black {
+    order: 0;
+  }
+  &-grey {
+    order: 1;
+  }
+  &--pink {
+    order: 2;
+  }
+  &--tiffany {
+    order: 3;
+  }
+  &--orange {
+    order: 4;
+  }
+}
 }
