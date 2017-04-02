@@ -6,6 +6,12 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var mqpacker = require("css-mqpacker");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var run = require("run-sequence");
+var del = require("del");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
