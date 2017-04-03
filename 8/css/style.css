@@ -2239,20 +2239,6 @@ input:checked + .form__label--checkbox::after {
     width: 668px;
   }
 }
-@media (min-width: 1150px) and (min-width: 1150px) {
-  .contacts {
-    width: 1050px;
-  }
-  .main__wrapper {
-    width: 1050px;
-  }
-}
-@media (min-width: 1150px) and (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-width: 1150px) and (min-resolution: 1.5dppx) {
-  .feedback__wrapper {
-    background: url("../img/review@2x.jpg") no-repeat;
-    background-size: 354px;
-  }
-}
 @media (min-width: 1150px) {
   h1 {
     font-size: 53px;
@@ -2386,7 +2372,7 @@ input:checked + .form__label--checkbox::after {
     width: 1050px;
   }
   .contacts {
-    width: 260px;
+    width: 1050px;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
@@ -2409,7 +2395,7 @@ input:checked + .form__label--checkbox::after {
     margin-bottom: 91px;
   }
   .contacts__wrapper {
-    width: 50%;
+    width: 525px;
     margin: 0;
     margin-right: 71px;
   }
@@ -2580,10 +2566,6 @@ input:checked + .form__label--checkbox::after {
     height: 123px;
     padding-top: 25px;
   }
-  .main__wrapper {
-    width: 260px;
-    margin: 0 auto;
-  }
   .main__wrapper--form {
     width: 700px;
   }
@@ -2598,9 +2580,8 @@ input:checked + .form__label--checkbox::after {
     padding-top: 93px;
   }
   .main__description {
+    margin: 0 auto;
     margin-top: 120px;
-    padding-left: 175px;
-    padding-right: 164px;
     margin-bottom: 64px;
   }
   .main__item {
@@ -2827,12 +2808,10 @@ input:checked + .form__label--checkbox::after {
     left: 70px;
   }
 }
-@media (min-width: 1150px) and (min-width: 768px) {
-  .contacts {
-    width: 668px;
-  }
-  .main__wrapper {
-    width: 668px;
+@media (min-width: 1150px) and (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-width: 1150px) and (min-resolution: 1.5dppx) {
+  .feedback__wrapper {
+    background: url("../img/review@2x.jpg") no-repeat;
+    background-size: 354px;
   }
 }
 @media (min-width: 768px) and (min-width: 1150px) {
