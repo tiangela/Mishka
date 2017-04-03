@@ -1190,6 +1190,22 @@ input:checked + .form__label--checkbox::after {
   font-weight: 400;
   padding-bottom: 30px;
 }
+.modal__overlay {
+  display: none;
+}
+.modal__overlay--show {
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+}
 .product {
   width: 260px;
   margin: 0 auto;
@@ -2697,6 +2713,12 @@ input:checked + .form__label--checkbox::after {
   .modal__form p {
     text-align: center;
     width: 350px;
+  }
+  .modal__overlay--show {
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
   }
   .product {
     width: 1050px;
