@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка: Каталог</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
@@ -209,21 +209,21 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-      <p class="modal__title">Добавить в корзину</p>
-      <p class="modal__text">Выберите размер</p>
-      <div class="modal__wrapper">
-        <input class="modal__size" id="s" type="radio" name="size" value="S" checked>
-        <label for="s">S</label>
-        <input class="modal__size" id="m" type="radio" name="size" value="M">
-        <label for="m">M</label>
-        <input class="modal__size" id="l" type="radio" name="size" value="L">
-        <label for="l">L</label>
-        <button class="button button--modal" type="submit">Добавить</button>
-      </div>
-    </form>
-  </section>
+  <section class="modal modal__overlay">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal__container">
+          <p class="modal__title">Добавить в корзину</p>
+          <p class="modal__text">Выберите размер</p>
+          <input class="modal__size" id="s" type="radio" name="size" value="S" checked>
+          <label class="modal__label" for="s">S</label>
+          <input class="modal__size" id="m" type="radio" name="size" value="M">
+          <label class="modal__label" for="m">M</label>
+          <input class="modal__size" id="l" type="radio" name="size" value="L">
+          <label class="modal__label" for="l">L</label>
+          <button class="button button--modal" type="submit">Добавить</button>
+        </div>
+      </form>
+    </section>
     <script src="http://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
     <script src="js/script.js"></script>
 </body>
