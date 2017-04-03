@@ -68,7 +68,7 @@
     .feedback__svg:active {
       fill: @btn-active;
     }
-    @media @tablet-widths {
+        @media @tablet-widths {
       .feedback {
         padding-bottom: 77px;
         background: url("../img/review@1x.jpg") no-repeat;
@@ -123,13 +123,13 @@
       }
     }
 
-    @media @desktop-widths {
+  @media @desktop-widths {
   .feedback__wrapper {
     padding-left: 175px;
     height: 456px;
     background: url("../img/review@1x.jpg") no-repeat;
     background-position: left top;
-    @media @retina {
+    @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px)  and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px)  and (min-resolution: 1.5dppx) {
     background: url("../img/review@2x.jpg") no-repeat;
     background-size: 354px;
     }
