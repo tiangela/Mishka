@@ -1,14 +1,32 @@
 .about {
-  padding-top: 34px;
-  padding-bottom: 31px;
+  padding-top: 31px;
+  padding-bottom: 23px;
 }
+.about__wrapper {
+    .container ();
+}
+.about__container {
+  position: relative;
+}
+.about__container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    background: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 308px auto;
+    top: 0px;
+  }
+
 .about__list {
     margin: 0;
     padding: 0;
+    padding-top: 7px;
     list-style: none;
   }
   .about__title {
-    padding-top: 4px;
+    padding-top: 2px;
     padding-bottom: 30px;
   }
   .about__item {
@@ -16,49 +34,160 @@
       font-size: 17px;
       line-height: 20px;
       font-weight: 600;
-      padding-top: 55px;
-      padding-left: 2px;
-      padding-bottom: 25px;
+      padding-top: 48px;
+      padding-bottom: 35px;
+      padding-right: 36px;
       color: @color-grey;
+    &--material {
+      padding-right: 64px;
     }
-  .about__item:first-child {
-    padding-right: 20px;
+    &--material::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 37px;
+      background: url("../img/icon-feature-1.svg");
+      top: -4px;
+      left: 9px;
+    }
+    &--style {
+      padding-right: 36px;
+    }
+    &--style::before {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 27px;
+      background: url("../img/icon-feature-3.svg");
+      top: -5px;
+      left: 1px;
+    }
+    &--like {
+      padding-right: 58px;
+    }
+    &--like::before {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 27px;
+      background: url("../img/icon-feature-5.svg");
+      top: 0px;
+      left: 10px;
+    }
+    &--love {
+      padding-right: 48px;
+    }
+    &--love::before {
+      position: absolute;
+      content: "";
+      width: 35px;
+      height: 34px;
+      background: url("../img/icon-feature-2.svg");
+      top: -2px;
+      left: 5px;
+    }
+    &--producer {
+      padding-right: 0;
+    }
+    &--producer::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 23px;
+      background: url("../img/icon-feature-4.svg");
+      top: -2px;
+      left: -4px;
+    }
+    &--box {
+      padding-right: 24px;
+    }
+    &--box::before {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 32px;
+      background: url("../img/icon-feature-6.svg");
+      top: -4px;
+      left: 5px;
+    }
   }
 @media @tablet-widths {
   .about {
-    padding-top: 57px;
-    padding-bottom: 105px;
+    padding-top: 26px;
+  }
+  .about__container::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: 840px auto;
+      top: -2px;
   }
    .about__list {
     display: flex;
     flex-wrap: wrap;
   }
   .about__title {
-    padding-top: 33px;
-    padding-bottom: 50px;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    margin-left: -5px;
   }
   .about__item {
+    position: relative;
+    font-size: 20px;
+    line-height: 22px;
     width: 334px;
     padding-right: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 29px;
+    &--material {
+      padding-right: 120px;
+      order: -1;
     }
-    .about__item:first-child {
-      padding-right: 30px;
+    &--style {
+      padding-right: 90px;
+      order: 2;
+    }
+    &--like {
+      padding-right: 110px;
+      order: 5;
+    }
+    &--love {
+      padding-right: 50px;
+      order: 1;
+    }
+    &--producer {
+      padding-right: 38px;
+      order: 4;
+    }
+    &--box {
+    padding-right: 85px;
+    order: 6;
+    }
     }
 }
 @media @desktop-widths {
   .about {
-    padding-top: 83px;
-    padding-bottom: 150px;
+    padding-top: 59px;
+    padding-bottom: 77px;
     }
   .about__wrapper {
     padding-left: 175px;
   }
+  .about__container::after {
+    background-size: 1110px auto;
+  }
   .about__title {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 0;
   }
+  .about__list {
+    padding-top: 0px;
+    padding-left: 3px;
+  }
   .about__item {
+    position: relative;
     font-size: 20px;
     line-height: 22px;
     display: inline-block;
@@ -66,5 +195,15 @@
     padding-top: 100px;
     margin-bottom: 0;
     padding-bottom: 12px;
+    &--material::before, &--style::before, &--like::before {
+      top: 49px;
+    }
+    &--love::before, &--producer::before {
+      top: 52px;
+    }
+    &--box::before {
+      top: 47px;
+    }
+
   }
 }

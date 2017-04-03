@@ -3,13 +3,111 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 600;
+  display: block;
   color: @color-grey;
   border:  2px solid @color-grey;
   background-color: @body-color;
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   text-decoration: none;
- &--basket {
-   display: none;
- }
+  width: 260px;
+  height: 52px;
+  text-align: center;
+  &--basket {
+    border: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    svg {
+      position: absolute;
+      bottom: 30px;
+      right: 27px;
+      fill: @btn-grey;
+  }
+  svg:hover {
+      fill: @color-green;
+    }
+ svg:active {
+      fill: @basket-active;
+    }
+  }
+  &--feedback {
+    margin-bottom: 40px;
+  }
+  &--contacts {
+    margin: 0 auto;
+    padding-top: 13px;
+  }
+  &--modal {
+    color: @body-color;
+    background-color: @color-green;
+    border: none;
+    width: 100%;
+  }
+  &--product {
+    padding-left: 0px;
+  }
+  &--catalog {
+    width: 188px;
+    margin: 0 auto;
+  }
+}
+.button:hover {
+  background-color: @color-grey;
+  color: @body-color;
+}
+.button:active {
+  background-color: @color-grey;
+  color: @modal-grey;
+}
+@media @tablet-widths {
+  .button {
+    &--product {
+    width: 291px;
+    }
+    &--feedback {
+      position: absolute;
+      position: absolute;
+      width: 175px;
+      top: 75px;
+      right: 48px;
+    }
+    &--contacts {
+      width: 230px;
+      margin-top: 55px;
+    }
+    &--catalog {
+      width: 99%;
+    }
+    &--form {
+      width: 229px;
+      padding-top: 6px;
+    }
+  }
+}
+@media @desktop-widths {
+  .button {
+    &--product {
+      margin-left: 7px;
+    }
+    &--feedback {
+      top: 80px;
+      right: 146px;
+    }
+    &--contacts {
+      position: absolute;
+      bottom: 106px;
+      left: 174px;
+    }
+    &--catalog {
+      width: 230px;
+      margin: 0;
+      margin-left: 69px;
+    }
+  }
 }

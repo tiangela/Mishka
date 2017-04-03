@@ -1,12 +1,40 @@
 .social {
   width: 190px;
-  display: block; /*временно*/
-  color: black; /*временно*/
-  padding-bottom: 28px;
-  padding-left: 57px;
-  padding-right: 62px;
+  margin-bottom: 22px;
+  margin-left: 45px;
+  margin-top: 0;
 }
-
+.social__svg {
+    &--ig {
+    width: 22px;
+    height: 21px;
+  }
+  &--fb {
+    width: 13px;
+    height: 31px;
+    margin-bottom: -3px;
+  }
+  &--tw {
+    width: 24px;
+    height: 20px;
+  }
+}
+.social__svg:hover {
+  fill: @green-hover;
+}
+.social__svg:active {
+  fill: @green-active;
+}
+.social__button {
+  display: inline-block;
+  padding-right: 37px;
+}
+.social__button:last-child {
+  padding-right: 0;
+}
 @media @tablet-widths {
-  width: 170px;
+  .social {
+    margin-left: 153px;
+    width: 183px;
+  }
 }
