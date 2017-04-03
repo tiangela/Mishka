@@ -15,6 +15,26 @@
   height: 52px;
   text-align: center;
   &--basket {
+    border: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    svg {
+      position: absolute;
+      bottom: 30px;
+      right: 27px;
+      fill: @btn-grey;
+  }
+  svg:hover {
+      fill: @color-green;
+    }
+ svg:active {
+      fill: @basket-active;
+    }
   }
   &--feedback {
     margin-bottom: 40px;
