@@ -99,10 +99,12 @@
     }
     @media @desktop-widths {
     .contacts {
+      .container ();
       display: flex;
-      padding-top: 156px;
+      padding-top: 155px;
       padding-bottom: 67px;
-      flex-wrap: wrap;
+      padding-left: 173px;
+      flex-wrap: nowrap;
       position: relative;
     }
     .contacts__title {
@@ -118,8 +120,8 @@
     }
     .contacts__wrapper {
       width: 50%;
-      padding-left: 326px;
       margin: 0;
+      margin-right: 71px;
     }
     .contacts__item {
       font-size: 17px;
@@ -128,14 +130,15 @@
       padding-bottom: 50px;
       span {
         white-space: nowrap;
-        padding-bottom: 4px;
+        padding-bottom: 6px;
+        padding-right: 26px;
       }
       &--mail a {
         border-bottom: 1px solid @color-green;
         padding-right: 20px;
       }
       &--address p {
-        padding-right: 48px;
-      }
+        padding-right: 0;
+        }
     }
 }

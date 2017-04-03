@@ -122,17 +122,18 @@
 
     @media @desktop-widths {
   .feedback {
+    background: none;
+  }
+  .feedback__wrapper {
+    padding-left: 175px;
     height: 456px;
     background: url("../img/review@1x.jpg") no-repeat;
-    background-position: 116px;
+    background-position: left top;
     @media @retina {
     background: url("../img/review@2x.jpg") no-repeat;
     background-size: 354px;
     }
-    }
-  .feedback__wrapper {
-      padding-left: 175px;
-    }
+  }
   .feedback__text {
     padding-left: 2px;
     padding-bottom: 36px;
