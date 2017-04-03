@@ -498,6 +498,28 @@ h3 {
   height: 52px;
   text-align: center;
 }
+.button--basket {
+  border: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+.button--basket svg {
+  position: absolute;
+  bottom: 30px;
+  right: 27px;
+  fill: #d3d2d2;
+}
+.button--basket svg:hover {
+  fill: #63d1bb;
+}
+.button--basket svg:active {
+  fill: #d0f1ea;
+}
 .button--feedback {
   margin-bottom: 40px;
 }
@@ -557,8 +579,9 @@ h3 {
     right: 146px;
   }
   .button--contacts {
-    margin-top: -91px;
-    margin-left: 328px;
+    position: absolute;
+    bottom: 106px;
+    left: 174px;
   }
   .button--catalog {
     width: 230px;
@@ -794,6 +817,7 @@ h3 {
   padding-right: 30px;
   padding-top: 26px;
   padding-bottom: 4px;
+  white-space: nowrap;
 }
 .contacts__item p {
   display: table-cell;
@@ -858,12 +882,15 @@ h3 {
 }
 @media (min-width: 1150px) {
   .contacts {
+    width: 260px;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 156px;
+    padding-top: 155px;
     padding-bottom: 67px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    padding-left: 173px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     position: relative;
   }
   .contacts__title {
@@ -879,8 +906,8 @@ h3 {
   }
   .contacts__wrapper {
     width: 50%;
-    padding-left: 326px;
     margin: 0;
+    margin-right: 71px;
   }
   .contacts__item {
     font-size: 17px;
@@ -889,14 +916,26 @@ h3 {
     padding-bottom: 50px;
   }
   .contacts__item span {
-    padding-bottom: 4px;
+    white-space: nowrap;
+    padding-bottom: 6px;
+    padding-right: 26px;
   }
   .contacts__item--mail a {
     border-bottom: 1px solid #63d1bb;
     padding-right: 20px;
   }
   .contacts__item--address p {
-    padding-right: 48px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1150px) and (min-width: 768px) {
+  .contacts {
+    width: 668px;
+  }
+}
+@media (min-width: 1150px) and (min-width: 1150px) {
+  .contacts {
+    width: 1050px;
   }
 }
 .feedback {
@@ -986,6 +1025,9 @@ h3 {
     background: url("../img/review@1x.jpg") no-repeat;
     background-position: left top;
   }
+  .feedback__wrapper {
+    background: none;
+  }
   .feedback::after {
     content: "";
     position: absolute;
@@ -1030,18 +1072,18 @@ h3 {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .feedback {
     background: url("../img/review@2x.jpg") no-repeat;
-    background-size: cover;
+    background-size: 350px 455px;
   }
 }
 @media (min-width: 1150px) {
-  .feedback {
-    background-image: none;
-  }
   .feedback__wrapper {
     padding-left: 175px;
     height: 456px;
     background: url("../img/review@1x.jpg") no-repeat;
     background-position: left top;
+  }
+  .feedback {
+    background: none;
   }
   .feedback__text {
     padding-left: 2px;
@@ -1062,7 +1104,7 @@ h3 {
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .feedback__wrapper {
     background: url("../img/review@2x.jpg") no-repeat;
-    background-size: cover;
+    background-size: 354px;
   }
 }
 .footer {
@@ -1751,6 +1793,7 @@ input:checked + .form__label--checkbox::after {
   padding-top: 0;
   background-repeat: no-repeat;
   background-position: center -18px;
+  background-size: 1155px 747px;
   background-image: url("../img/hero-mobile@1x.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -2070,7 +2113,7 @@ input:checked + .form__label--checkbox::after {
 }
 @media (min-width: 1150px) {
   .map {
-    width: 50%;
+    width: 525px;
     background: url("../img/map-desktop@1x.jpg") no-repeat;
     margin-top: -71px;
   }
@@ -2081,6 +2124,8 @@ input:checked + .form__label--checkbox::after {
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .map {
     background: url("../img/map-desktop@2x.jpg");
+    background-size: 525px 454px;
+    background-repeat: no-repeat;
   }
 }
 .menu {
@@ -2424,41 +2469,28 @@ input:checked + .form__label--checkbox::after {
   border-top: 1px solid #c7c7c7;
   box-shadow: 0px 10px 28px -2px #ededed;
   width: 100%;
+  height: 338px;
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 46px;
   display: none;
   position: fixed;
-}
-.modal__show {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: #fff;
-  border-top: 1px solid #c7c7c7;
-  box-shadow: 0px 10px 28px -2px #ededed;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 36px;
-  padding-bottom: 46px;
-  position: fixed;
-  display: block;
 }
 .modal__overlay {
+  display: none;
+}
+.modal__overlay--show {
   position: fixed;
-  z-index: 1000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-.modal__overlay-shadow {
-  display: block;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .modal__wrapper {
   width: 260px;
@@ -2518,6 +2550,7 @@ input:checked + .form__label--checkbox::after {
 @media (min-width: 768px) {
   .modal {
     width: 568px;
+    height: 340px;
   }
   .modal__wrapper {
     width: 350px;
@@ -2619,7 +2652,7 @@ input:checked + .form__label--checkbox::after {
     background-size: 763px auto;
     background-position: bottom;
     margin-top: -29px;
-    z-index: 100;
+    z-index: 20;
   }
   .product__table {
     font-size: 15px;
