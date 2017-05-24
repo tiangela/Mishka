@@ -984,7 +984,7 @@ input:checked + .form__label--checkbox::after {
   width: 100%;
   height: 457px;
 }
-.map::before {
+/*.map::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-map-pin.svg");
@@ -992,7 +992,7 @@ input:checked + .form__label--checkbox::after {
   height: 98px;
   bottom: 194px;
   left: 125px;
-}
+}*/
 .menu {
   width: 320px;
   min-height: 75px;
