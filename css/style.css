@@ -1705,7 +1705,6 @@ input:checked + .form__label--checkbox::after {
     height: 23px;
     background: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: auto;
     bottom: -22px;
   }
   .feedback__title {
@@ -2420,9 +2419,10 @@ input:checked + .form__label--checkbox::after {
   .about__wrapper {
     padding-left: 175px;
   }
-  .about__container::after {
+/*  .about__container::after {
     background-size: auto;
-  }
+  }*/
+  
   .about__title {
     padding-top: 20px;
     padding-bottom: 0;
